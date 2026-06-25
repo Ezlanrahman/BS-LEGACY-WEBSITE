@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hubungi — BS Legacy HQ</title>
+<meta name="description" content="Hubungi BS Legacy HQ untuk pertanyaan produk, tempahan, atau peluang menjadi stokis herba premium di Malaysia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar__track">
+    <span>Diproses Bertaraf GMP&nbsp;&nbsp;&nbsp;Penghantaran Seluruh Malaysia&nbsp;&nbsp;&nbsp;100% Herba Semula Jadi&nbsp;&nbsp;&nbsp;Jenama Terpilih</span>
+    <span>Diproses Bertaraf GMP&nbsp;&nbsp;&nbsp;Penghantaran Seluruh Malaysia&nbsp;&nbsp;&nbsp;100% Herba Semula Jadi&nbsp;&nbsp;&nbsp;Jenama Terpilih</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><b>BS Legacy HQ</b><small>Premium Herba</small></a>
+    <nav class="nav__links">
+      <a href="index.html">Utama</a>
+      <a href="produk.html">Produk</a>
+      <a href="jenama.html">Jenama</a>
+      <a href="hubungi.html" class="active">Hubungi</a>
+      <a href="hubungi.html" class="btn btn--gold nav__cta">Jadi Stokis</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<aside class="drawer">
+  <a href="index.html">Utama</a>
+  <a href="produk.html">Produk</a>
+  <a href="jenama.html">Jenama</a>
+  <a href="hubungi.html">Hubungi</a>
+  <a href="hubungi.html" class="btn btn--gold">Jadi Stokis</a>
+</aside>
+<div class="scrim"></div>
+
+<section class="phero">
+  <div class="container">
+    <span class="eyebrow">Kami Sedia Membantu</span>
+    <h1>Hubungi Kami</h1>
+    <p>Ada pertanyaan tentang produk, tempahan atau ingin menjadi stokis? Isi borang di bawah atau hubungi kami terus.</p>
+    <div class="crumbs"><a href="index.html">Utama</a> &nbsp;/&nbsp; Hubungi</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <!-- Form -->
+    <div class="reveal">
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:8px">Hantar mesej</h2>
+      <p style="color:var(--ink-soft);margin-bottom:28px">Pasukan kami akan menghubungi anda dalam masa 1–2 hari bekerja.</p>
+      <form id="contactForm">
+        <div class="field"><label for="nama">Nama Penuh</label><input id="nama" type="text" placeholder="Nama anda" required></div>
+        <div class="field"><label for="emel">Emel</label><input id="emel" type="email" placeholder="anda@contoh.com" required></div>
+        <div class="field"><label for="telefon">No. Telefon</label><input id="telefon" type="tel" placeholder="+60 1X-XXX XXXX"></div>
+        <div class="field"><label for="topik">Tujuan</label>
+          <select id="topik">
+            <option>Pertanyaan Produk</option>
+            <option>Tempahan</option>
+            <option>Peluang Stokis</option>
+            <option>Lain-lain</option>
+          </select>
+        </div>
+        <div class="field"><label for="mesej">Mesej</label><textarea id="mesej" placeholder="Tuliskan mesej anda di sini..." required></textarea></div>
+        <button type="submit" class="btn btn--solid">Hantar Mesej</button>
+        <p class="form-note" style="display:none;margin-top:18px;color:var(--green-600);font-size:.95rem"></p>
+      </form>
+    </div>
+
+    <!-- Info -->
+    <div class="reveal">
+      <div class="ph ph--dark" style="aspect-ratio:5/3;border-radius:var(--radius)" data-label="Ibu Pejabat BS Legacy HQ"></div>
+      <ul class="info-list">
+        <li><b>Alamat</b><span>Ibu Pejabat BS Legacy HQ, Selangor, Malaysia<br>(Alamat penuh akan dikemaskini)</span></li>
+        <li><b>Emel</b><span><a href="mailto:info@bslegacy.com">info@bslegacy.com</a></span></li>
+        <li><b>Telefon / WhatsApp</b><span><a href="tel:+60123456789">+60 12-345 6789</a></span></li>
+        <li><b>Waktu Operasi</b><span>Isnin – Jumaat · 9:00 pagi – 6:00 petang</span></li>
+        <li><b>Media Sosial</b><span>Instagram · TikTok · Facebook — @bslegacyhq</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft" style="padding-top:0">
+  <div class="container">
+    <div class="map-ph ph" data-label="Peta Lokasi (Google Maps)"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <b>BS Legacy HQ</b><small>Premium Herba Malaysia</small>
+        <p>Membina warisan herba untuk generasi — gabungan kebijaksanaan tradisi dan kualiti moden.</p>
+      </div>
+      <div><h4>Navigasi</h4><ul><li><a href="index.html">Utama</a></li><li><a href="produk.html">Produk</a></li><li><a href="jenama.html">Jenama</a></li><li><a href="hubungi.html">Hubungi</a></li></ul></div>
+      <div><h4>Produk</h4><ul><li><a href="produk.html#auralisse">Auralisse</a></li><li><a href="produk.html#aurora">Jus Aurora</a></li><li><a href="produk.html#minyak">Minyak Herba</a></li><li><a href="produk.html#mandian">Mandian Herba</a></li></ul></div>
+      <div><h4>Hubungi</h4><ul><li><a href="mailto:info@bslegacy.com">info@bslegacy.com</a></li><li><a href="tel:+60123456789">+60 12-345 6789</a></li><li><a href="hubungi.html">Jadi Stokis</a></li><li><a href="#">Instagram · TikTok</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 BS Legacy HQ. Hak cipta terpelihara.</span>
+      <span>Diproses Bertaraf GMP · 100% Herba Semula Jadi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
