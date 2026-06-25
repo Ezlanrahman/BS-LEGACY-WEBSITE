@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jenama — BS Legacy HQ</title>
+<meta name="description" content="Kisah, visi dan nilai BS Legacy HQ — syarikat induk herba premium Malaysia yang membina warisan kesihatan untuk generasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar__track">
+    <span>Diproses Bertaraf GMP&nbsp;&nbsp;&nbsp;Penghantaran Seluruh Malaysia&nbsp;&nbsp;&nbsp;100% Herba Semula Jadi&nbsp;&nbsp;&nbsp;Jenama Terpilih</span>
+    <span>Diproses Bertaraf GMP&nbsp;&nbsp;&nbsp;Penghantaran Seluruh Malaysia&nbsp;&nbsp;&nbsp;100% Herba Semula Jadi&nbsp;&nbsp;&nbsp;Jenama Terpilih</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><b>BS Legacy HQ</b><small>Premium Herba</small></a>
+    <nav class="nav__links">
+      <a href="index.html">Utama</a>
+      <a href="produk.html">Produk</a>
+      <a href="jenama.html" class="active">Jenama</a>
+      <a href="hubungi.html">Hubungi</a>
+      <a href="hubungi.html" class="btn btn--gold nav__cta">Jadi Stokis</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<aside class="drawer">
+  <a href="index.html">Utama</a>
+  <a href="produk.html">Produk</a>
+  <a href="jenama.html">Jenama</a>
+  <a href="hubungi.html">Hubungi</a>
+  <a href="hubungi.html" class="btn btn--gold">Jadi Stokis</a>
+</aside>
+<div class="scrim"></div>
+
+<section class="phero">
+  <div class="container">
+    <span class="eyebrow">Kisah Kami</span>
+    <h1>Jenama BS Legacy HQ</h1>
+    <p>Sebuah warisan yang dibina atas kepercayaan, kualiti dan kasih terhadap kesihatan keluarga Malaysia.</p>
+    <div class="crumbs"><a href="index.html">Utama</a> &nbsp;/&nbsp; Jenama</div>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="section">
+  <div class="container split">
+    <div class="split__media ph reveal" data-label="Kisah Jenama"></div>
+    <div class="split__body reveal">
+      <span class="eyebrow">Permulaan Kami</span>
+      <h2>Warisan herba, diperbaharui untuk hari ini</h2>
+      <p>BS Legacy HQ lahir daripada satu kepercayaan ringkas: khazanah herba tradisi Malaysia terlalu berharga untuk dilupakan. Kami menghimpunkan jenama herba terpilih di bawah satu syarikat induk yang memegang piawaian kualiti yang tinggi.</p>
+      <p>Hari ini, kami terus berkembang — bukan sekadar menjual produk, tetapi membina sebuah warisan kesihatan yang boleh diwariskan dari satu generasi ke generasi seterusnya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mission / Vision -->
+<section class="section bg-soft">
+  <div class="container">
+    <div class="shead center reveal">
+      <span class="eyebrow">Tonggak Kami</span>
+      <h2>Misi & Visi</h2>
+    </div>
+    <div class="pgrid">
+      <div class="tcard reveal">
+        <span class="eyebrow">Misi</span>
+        <q style="font-size:1.25rem;margin-top:12px">Membawa produk herba berkualiti tinggi yang selamat dan berkesan kepada setiap keluarga Malaysia.</q>
+      </div>
+      <div class="tcard reveal">
+        <span class="eyebrow">Visi</span>
+        <q style="font-size:1.25rem;margin-top:12px">Menjadi syarikat induk herba premium yang paling dipercayai di Malaysia dan rantau ini.</q>
+      </div>
+      <div class="tcard reveal">
+        <span class="eyebrow">Nilai</span>
+        <q style="font-size:1.25rem;margin-top:12px">Integriti, kualiti tanpa kompromi, dan keikhlasan dalam menjaga kesihatan pelanggan.</q>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values strip -->
+<section class="section bg-green">
+  <div class="container">
+    <div class="shead center reveal">
+      <span class="eyebrow">Apa yang kami pegang</span>
+      <h2>Prinsip yang membentuk setiap keputusan</h2>
+    </div>
+    <div class="fstrip">
+      <div class="item reveal"><span class="num">✿</span><b>Semula Jadi</b><p>Hanya herba pilihan tanpa bahan memudaratkan.</p></div>
+      <div class="item reveal"><span class="num">✦</span><b>Bertaraf GMP</b><p>Pemprosesan mengikut piawaian kualiti ketat.</p></div>
+      <div class="item reveal"><span class="num">❋</span><b>Mesra Keluarga</b><p>Produk untuk semua lapisan usia.</p></div>
+      <div class="item reveal"><span class="num">✧</span><b>Dipercayai</b><p>Sokongan puluhan ribu pelanggan setia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline / milestones -->
+<section class="section">
+  <div class="container">
+    <div class="shead center reveal">
+      <span class="eyebrow">Perjalanan Kami</span>
+      <h2>Tumbuh bersama kepercayaan anda</h2>
+    </div>
+    <div class="fstrip">
+      <div class="item reveal"><span class="num">9+</span><b>Herba Tradisi</b><p>Dalam formulasi pilihan kami.</p></div>
+      <div class="item reveal"><span class="num">50k+</span><b>Pelanggan</b><p>Di seluruh Malaysia.</p></div>
+      <div class="item reveal"><span class="num">4</span><b>Jenama Produk</b><p>Bawah satu syarikat induk.</p></div>
+      <div class="item reveal"><span class="num">100%</span><b>Komitmen Kualiti</b><p>Pada setiap kelompok.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Jadi sebahagian daripada warisan ini</h2>
+      <p>Sama ada anda mencari produk berkualiti untuk keluarga atau peluang perniagaan sebagai stokis, kami mengalu-alukan anda.</p>
+      <div class="hero__actions">
+        <a href="produk.html" class="btn btn--gold">Lihat Produk</a>
+        <a href="hubungi.html" class="btn btn--ghost" style="color:var(--cream-soft);border-color:var(--gold-soft)">Hubungi Kami</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <b>BS Legacy HQ</b><small>Premium Herba Malaysia</small>
+        <p>Membina warisan herba untuk generasi — gabungan kebijaksanaan tradisi dan kualiti moden.</p>
+      </div>
+      <div><h4>Navigasi</h4><ul><li><a href="index.html">Utama</a></li><li><a href="produk.html">Produk</a></li><li><a href="jenama.html">Jenama</a></li><li><a href="hubungi.html">Hubungi</a></li></ul></div>
+      <div><h4>Produk</h4><ul><li><a href="produk.html#auralisse">Auralisse</a></li><li><a href="produk.html#aurora">Jus Aurora</a></li><li><a href="produk.html#minyak">Minyak Herba</a></li><li><a href="produk.html#mandian">Mandian Herba</a></li></ul></div>
+      <div><h4>Hubungi</h4><ul><li><a href="mailto:info@bslegacy.com">info@bslegacy.com</a></li><li><a href="tel:+60123456789">+60 12-345 6789</a></li><li><a href="hubungi.html">Jadi Stokis</a></li><li><a href="#">Instagram · TikTok</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 BS Legacy HQ. Hak cipta terpelihara.</span>
+      <span>Diproses Bertaraf GMP · 100% Herba Semula Jadi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
