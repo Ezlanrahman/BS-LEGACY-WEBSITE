@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produk — BS Legacy HQ</title>
+<meta name="description" content="Koleksi produk herba premium BS Legacy HQ: Auralisse, Minuman Jus Aurora, Minyak Herba dan Mandian Herba Tradisi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar__track">
+    <span>Diproses Bertaraf GMP&nbsp;&nbsp;&nbsp;Penghantaran Seluruh Malaysia&nbsp;&nbsp;&nbsp;100% Herba Semula Jadi&nbsp;&nbsp;&nbsp;Jenama Terpilih</span>
+    <span>Diproses Bertaraf GMP&nbsp;&nbsp;&nbsp;Penghantaran Seluruh Malaysia&nbsp;&nbsp;&nbsp;100% Herba Semula Jadi&nbsp;&nbsp;&nbsp;Jenama Terpilih</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><b>BS Legacy HQ</b><small>Premium Herba</small></a>
+    <nav class="nav__links">
+      <a href="index.html">Utama</a>
+      <a href="produk.html" class="active">Produk</a>
+      <a href="jenama.html">Jenama</a>
+      <a href="hubungi.html">Hubungi</a>
+      <a href="hubungi.html" class="btn btn--gold nav__cta">Jadi Stokis</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<aside class="drawer">
+  <a href="index.html">Utama</a>
+  <a href="produk.html">Produk</a>
+  <a href="jenama.html">Jenama</a>
+  <a href="hubungi.html">Hubungi</a>
+  <a href="hubungi.html" class="btn btn--gold">Jadi Stokis</a>
+</aside>
+<div class="scrim"></div>
+
+<!-- Page hero -->
+<section class="phero">
+  <div class="container">
+    <span class="eyebrow">Koleksi Herba Premium</span>
+    <h1>Produk Kami</h1>
+    <p>Setiap produk BS Legacy HQ diformulasi dengan teliti — menggabungkan herba pilihan dan piawaian kualiti moden untuk kesihatan menyeluruh keluarga anda.</p>
+    <div class="crumbs"><a href="index.html">Utama</a> &nbsp;/&nbsp; Produk</div>
+  </div>
+</section>
+
+<!-- Product detail rows -->
+<section class="section">
+  <div class="container">
+
+    <article class="prow reveal" id="auralisse">
+      <div class="prow__media ph" data-label="Auralisse"></div>
+      <div class="prow__body">
+        <span class="eyebrow">Penjagaan Wanita</span>
+        <h2>Auralisse</h2>
+        <div class="price">RM 89</div>
+        <p>Wanita sihat, aura terserlah. Auralisse diformulasi khas untuk menyokong keseimbangan dalaman, tenaga dan kesegaran wanita pada setiap fasa kehidupan.</p>
+        <ul>
+          <li>Sokong keseimbangan hormon & tenaga harian</li>
+          <li>Gabungan herba tradisi pilihan</li>
+          <li>Bebas bahan tiruan yang memudaratkan</li>
+        </ul>
+        <a href="hubungi.html" class="btn btn--solid">Tempah Sekarang</a>
+      </div>
+    </article>
+
+    <article class="prow prow--rev reveal" id="aurora">
+      <div class="prow__media ph ph--gold" data-label="Minuman Jus Aurora"></div>
+      <div class="prow__body">
+        <span class="eyebrow">Minuman Fungsian</span>
+        <h2>Minuman Jus Aurora</h2>
+        <div class="price">RM 99</div>
+        <p>Gabungan herba dan buah pilihan yang kaya dengan antioksidan. Jus Aurora membantu meningkatkan tenaga, menyokong imuniti dan memberi kesegaran sepanjang hari.</p>
+        <ul>
+          <li>Tingkatkan tenaga & imuniti tubuh</li>
+          <li>Sumber antioksidan semula jadi</li>
+          <li>Rasa enak, sesuai untuk seisi keluarga</li>
+        </ul>
+        <a href="hubungi.html" class="btn btn--solid">Tempah Sekarang</a>
+      </div>
+    </article>
+
+    <article class="prow reveal" id="minyak">
+      <div class="prow__media ph ph--dark" data-label="Minyak Herba"></div>
+      <div class="prow__body">
+        <span class="eyebrow">Penjagaan Luaran</span>
+        <h2>Minyak Herba</h2>
+        <div class="price">RM 45</div>
+        <p>Minyak urut herba tradisi yang melegakan ketegangan otot, melancarkan peredaran dan memberi kehangatan menenangkan kepada badan yang letih.</p>
+        <ul>
+          <li>Lega otot tegang & sendi lenguh</li>
+          <li>Formulasi herba aromatik tradisi</li>
+          <li>Sesuai untuk urutan harian</li>
+        </ul>
+        <a href="hubungi.html" class="btn btn--solid">Tempah Sekarang</a>
+      </div>
+    </article>
+
+    <article class="prow prow--rev reveal" id="mandian">
+      <div class="prow__media ph" data-label="Mandian Herba Tradisi"></div>
+      <div class="prow__body">
+        <span class="eyebrow">Tradisi Warisan</span>
+        <h2>Mandian Herba Tradisi</h2>
+        <div class="price">RM 59</div>
+        <p>Aurora Kasih 9 Herba — campuran sembilan herba warisan untuk mandian yang menyegarkan tubuh, menenangkan minda dan sesuai pada semua lapisan umur dan jantina.</p>
+        <ul>
+          <li>9 herba tradisi terpilih</li>
+          <li>Segarkan tubuh & tenangkan minda</li>
+          <li>Sesuai semua lapisan umur</li>
+        </ul>
+        <a href="hubungi.html" class="btn btn--solid">Tempah Sekarang</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-soft">
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Mahukan harga istimewa stokis?</h2>
+      <p>Sertai rangkaian stokis BS Legacy HQ dan nikmati margin menarik serta sokongan penuh pasukan kami.</p>
+      <div class="hero__actions">
+        <a href="hubungi.html" class="btn btn--gold">Jadi Stokis</a>
+        <a href="jenama.html" class="btn btn--ghost" style="color:var(--cream-soft);border-color:var(--gold-soft)">Kenali Kami</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <b>BS Legacy HQ</b><small>Premium Herba Malaysia</small>
+        <p>Membina warisan herba untuk generasi — gabungan kebijaksanaan tradisi dan kualiti moden.</p>
+      </div>
+      <div><h4>Navigasi</h4><ul><li><a href="index.html">Utama</a></li><li><a href="produk.html">Produk</a></li><li><a href="jenama.html">Jenama</a></li><li><a href="hubungi.html">Hubungi</a></li></ul></div>
+      <div><h4>Produk</h4><ul><li><a href="#auralisse">Auralisse</a></li><li><a href="#aurora">Jus Aurora</a></li><li><a href="#minyak">Minyak Herba</a></li><li><a href="#mandian">Mandian Herba</a></li></ul></div>
+      <div><h4>Hubungi</h4><ul><li><a href="mailto:info@bslegacy.com">info@bslegacy.com</a></li><li><a href="tel:+60123456789">+60 12-345 6789</a></li><li><a href="hubungi.html">Jadi Stokis</a></li><li><a href="#">Instagram · TikTok</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 BS Legacy HQ. Hak cipta terpelihara.</span>
+      <span>Diproses Bertaraf GMP · 100% Herba Semula Jadi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
