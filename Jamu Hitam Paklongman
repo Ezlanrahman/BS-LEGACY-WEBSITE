@@ -1,0 +1,187 @@
+<!-- ============================================================= -->
+<!-- JAMU PAKLONGMAN HITAM — Landing Page                          -->
+<!-- Cara guna: WordPress > Edit page > tambah block "Custom HTML" -->
+<!-- > copy SEMUA dalam fail ni > paste > Update. Siap.            -->
+<!-- Tukar nombor WhatsApp di bahagian JS bawah (cari WA_NUMBER).  -->
+<!-- ============================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  #jpl-root *{box-sizing:border-box;margin:0;padding:0}
+  #jpl-root{font-family:'Plus Jakarta Sans',sans-serif;color:#111;line-height:1.4;display:flex;justify-content:center;background:#ECECEC;padding:0}
+  #jpl-root .jpl-page{width:100%;max-width:480px;background:#ECECEC;overflow:hidden;box-shadow:0 0 60px rgba(0,0,0,.08)}
+  #jpl-root h1,#jpl-root h2{font-family:'Sora',sans-serif;letter-spacing:-.01em}
+  #jpl-root a{text-decoration:none}
+  #jpl-root .jpl-card{background:#fff;border:1px solid #E3E3E3;border-radius:14px;padding:14px 15px;display:flex;align-items:center;gap:12px;cursor:pointer;position:relative;transition:border .15s,box-shadow .15s}
+  #jpl-root .jpl-card.on{background:#EFEFEF;border:2px solid #111;box-shadow:0 8px 22px rgba(0,0,0,.16);padding:13px 14px}
+  #jpl-root .jpl-radio{flex:0 0 auto;width:20px;height:20px;border-radius:50%;border:2px solid #E3E3E3;background:#fff}
+  #jpl-root .jpl-card.on .jpl-radio{border:6px solid #111}
+  @keyframes jplPulse{0%,100%{box-shadow:0 8px 22px rgba(0,0,0,.22)}50%{box-shadow:0 12px 32px rgba(0,0,0,.36)}}
+  #jpl-root .jpl-cta{animation:jplPulse 2.4s ease-in-out infinite}
+</style>
+
+<div id="jpl-root">
+<div class="jpl-page">
+
+  <!-- countdown bar -->
+  <div style="background:#000;color:#E8E8E8;display:flex;align-items:center;justify-content:center;gap:8px;padding:11px 16px;font-size:12px;font-weight:700;letter-spacing:.02em">
+    <span style="width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.18)"></span>TAWARAN HARI INI TAMAT DALAM <b id="jpl-cd" style="color:#fff;font-variant-numeric:tabular-nums">02:00:00</b>
+  </div>
+
+  <!-- hero -->
+  <div style="background:#0E0E0E;color:#fff;padding:30px 24px 32px">
+    <div style="display:inline-flex;align-items:center;gap:6px;border:1px solid #333;color:#e6e6e6;font-size:11px;font-weight:700;padding:6px 11px;border-radius:20px;letter-spacing:.02em">★★★★★ 4.9 · 1,200+ ulasan</div>
+    <h1 style="font-weight:800;font-size:33px;line-height:1.1;margin:16px 0 0;color:#fff">Tenaga &amp; Stamina Lelaki, Dijaga Cara Semula Jadi</h1>
+    <p style="font-size:14.5px;line-height:1.55;color:#b0b0b0;margin:12px 0 0">Jamu Paklongman Hitam — amalan herba tradisional untuk lelaki dewasa yang mahu kekal bertenaga, segar &amp; yakin.</p>
+    <div style="position:relative;aspect-ratio:16/10;background:#1a1a1a;border:1px solid #2c2c2c;border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center;margin-top:18px">
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 12px,transparent 12px 24px)"></div>
+      <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase">gambar produk jamu</span>
+    </div>
+    <a href="#jpl-order" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;background:#fff;color:#000;font-weight:800;font-size:16px;padding:17px;border-radius:13px;font-family:'Sora',sans-serif">DAPATKAN SEKARANG →</a>
+  </div>
+
+  <!-- trust badges -->
+  <div style="display:flex;gap:8px;padding:16px 16px 0">
+    <div style="flex:1;background:#fff;border:1px solid #E3E3E3;border-radius:10px;padding:10px;text-align:center;font-size:11px;font-weight:600;color:#111">✔ COD<br><span style="color:#999;font-weight:500">Bayar bila sampai</span></div>
+    <div style="flex:1;background:#fff;border:1px solid #E3E3E3;border-radius:10px;padding:10px;text-align:center;font-size:11px;font-weight:600;color:#111">✔ 2–5 Hari<br><span style="color:#999;font-weight:500">Penghantaran</span></div>
+    <div style="flex:1;background:#fff;border:1px solid #E3E3E3;border-radius:10px;padding:10px;text-align:center;font-size:11px;font-weight:600;color:#111">✔ Original<br><span style="color:#999;font-weight:500">BS Legacy HQ</span></div>
+  </div>
+
+  <!-- stok -->
+  <div style="margin:16px;background:#fff;border:1px solid #E3E3E3;border-radius:13px;padding:15px 16px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px"><span style="font-size:12.5px;font-weight:700;color:#111">Stok promosi hampir habis</span><span style="font-size:12px;font-weight:800;color:#111">Tinggal 17</span></div>
+    <div style="height:8px;background:#E8E8E8;border-radius:6px;overflow:hidden"><div style="width:66%;height:100%;background:#111;border-radius:6px"></div></div>
+    <div style="font-size:10.5px;color:#999;margin-top:7px">33 daripada 50 stok promosi hari ini telah dituntut</div>
+  </div>
+
+  <!-- stats -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#E0E0E0;border-top:1px solid #E0E0E0;border-bottom:1px solid #E0E0E0">
+    <div style="background:#ECECEC;padding:17px 8px;text-align:center"><div style="font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:#111">5,000+</div><div style="font-size:10.5px;color:#999;margin-top:2px">Unit Terjual</div></div>
+    <div style="background:#ECECEC;padding:17px 8px;text-align:center"><div style="font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:#111">4.9/5</div><div style="font-size:10.5px;color:#999;margin-top:2px">Rating</div></div>
+    <div style="background:#ECECEC;padding:17px 8px;text-align:center"><div style="font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:#111">38%</div><div style="font-size:10.5px;color:#999;margin-top:2px">Repeat Order</div></div>
+  </div>
+
+  <!-- masalah -->
+  <div style="padding:30px 24px 4px">
+    <div style="font-size:11px;font-weight:800;letter-spacing:.12em;color:#999;text-transform:uppercase">Masalah biasa</div>
+    <h2 style="font-weight:700;font-size:23px;margin:7px 0 16px">Kalau anda alami ini, anda tak keseorangan</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px">
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Cepat letih &amp; lesu</div>
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Tak segar pagi hari</div>
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Stamina menurun</div>
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Kurang keyakinan</div>
+    </div>
+  </div>
+
+  <!-- penyelesaian -->
+  <div style="padding:28px 24px 4px">
+    <h2 style="font-weight:700;font-size:23px;text-align:center;margin:0 0 6px">Penyelesaian Semula Jadi</h2>
+    <p style="font-size:13.5px;color:#999;text-align:center;margin:0 0 18px">Dipercayai pelanggan sejak 2024.</p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #E3E3E3;border-radius:12px;padding:15px"><div style="flex:0 0 auto;width:40px;height:40px;border-radius:10px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">✓</div><div><div style="font-weight:700;font-size:14.5px">Tenaga &amp; stamina harian</div><div style="font-size:12.5px;color:#7a7a7a;margin-top:1px">Bantu kekal cergas sepanjang hari.</div></div></div>
+      <div style="display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #E3E3E3;border-radius:12px;padding:15px"><div style="flex:0 0 auto;width:40px;height:40px;border-radius:10px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">✓</div><div><div style="font-weight:700;font-size:14.5px">Badan lebih segar</div><div style="font-size:12.5px;color:#7a7a7a;margin-top:1px">Rasa ringan &amp; selesa.</div></div></div>
+      <div style="display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #E3E3E3;border-radius:12px;padding:15px"><div style="flex:0 0 auto;width:40px;height:40px;border-radius:10px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">✓</div><div><div style="font-weight:700;font-size:14.5px">Keyakinan diri lelaki</div><div style="font-size:12.5px;color:#7a7a7a;margin-top:1px">Yakin dalam kehidupan harian.</div></div></div>
+      <div style="display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #E3E3E3;border-radius:12px;padding:15px"><div style="flex:0 0 auto;width:40px;height:40px;border-radius:10px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">✓</div><div><div style="font-weight:700;font-size:14.5px">100% herba tradisional</div><div style="font-size:12.5px;color:#7a7a7a;margin-top:1px">Campuran herba pilihan.</div></div></div>
+    </div>
+  </div>
+
+  <!-- perkenalkan -->
+  <div style="margin:28px 16px 4px;background:#0E0E0E;border-radius:18px;padding:30px 24px;color:#fff">
+    <div style="font-size:11px;font-weight:800;letter-spacing:.14em;color:#888;text-transform:uppercase">Perkenalkan</div>
+    <h2 style="font-weight:800;font-size:27px;margin:8px 0 0;color:#fff">Jamu Paklongman Hitam</h2>
+    <p style="font-size:18px;line-height:1.4;font-weight:600;color:#e6e6e6;margin:14px 0 0">“Bukan sekadar jamu biasa — tetapi amalan herba tradisional untuk lelaki dewasa yang mahu kekal bertenaga, segar dan yakin.”</p>
+    <p style="font-size:13.5px;line-height:1.62;color:#a8a8a8;margin:14px 0 0">Dihasilkan daripada campuran herba pilihan, dijual sejak 2024 di bawah BS Legacy HQ dan mendapat sambutan ramai pelanggan termasuk repeat order.</p>
+  </div>
+
+  <!-- testimoni -->
+  <div style="padding:30px 24px 4px">
+    <h2 style="font-weight:700;font-size:23px;text-align:center;margin:0 0 16px">Pelanggan Sebenar, Hasil Sebenar</h2>
+    <div style="display:flex;flex-direction:column;gap:11px">
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:13px;padding:16px"><div style="display:flex;align-items:center;gap:10px"><div style="width:40px;height:40px;border-radius:50%;background:repeating-linear-gradient(45deg,#EAEAEA 0 6px,#DFDFDF 6px 12px)"></div><div style="flex:1"><div style="font-weight:700;font-size:13.5px">En. Faizal · 41</div><span style="color:#111;font-size:11px;letter-spacing:1px">★★★★★</span></div><span style="font-size:9.5px;font-weight:800;color:#fff;background:#111;padding:3px 7px;border-radius:20px">REPEAT</span></div><p style="font-size:13px;line-height:1.5;color:#444;margin:11px 0 0">“Dah order kali ke-3. Badan rasa lebih segar &amp; bertenaga bila amal betul.”</p></div>
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:13px;padding:16px"><div style="display:flex;align-items:center;gap:10px"><div style="width:40px;height:40px;border-radius:50%;background:repeating-linear-gradient(45deg,#EAEAEA 0 6px,#DFDFDF 6px 12px)"></div><div style="flex:1"><div style="font-weight:700;font-size:13.5px">Hafiz · 38</div><span style="color:#111;font-size:11px;letter-spacing:1px">★★★★★</span></div></div><p style="font-size:13px;line-height:1.5;color:#444;margin:11px 0 0">“Lepas amal konsisten memang rasa beza. COD pulak senang, tak risau.”</p></div>
+      <div style="background:#fff;border:1px solid #E3E3E3;border-radius:13px;padding:16px"><div style="display:flex;align-items:center;gap:10px"><div style="width:40px;height:40px;border-radius:50%;background:repeating-linear-gradient(45deg,#EAEAEA 0 6px,#DFDFDF 6px 12px)"></div><div style="flex:1"><div style="font-weight:700;font-size:13.5px">En. Rahman · 45</div><span style="color:#111;font-size:11px;letter-spacing:1px">★★★★★</span></div><span style="font-size:9.5px;font-weight:800;color:#fff;background:#111;padding:3px 7px;border-radius:20px">REPEAT</span></div><p style="font-size:13px;line-height:1.5;color:#444;margin:11px 0 0">“Pakej berbaloi, free gift pun ada. Posmen hantar terus ke rumah.”</p></div>
+    </div>
+    <p style="font-size:10.5px;color:#a3a3a3;text-align:center;margin:13px 4px 0">Hasil mungkin berbeza mengikut individu.</p>
+  </div>
+
+  <!-- order -->
+  <div id="jpl-order" style="padding:30px 24px 8px">
+    <h2 style="font-weight:700;font-size:24px;text-align:center;margin:0 0 4px">Pilih Pakej Anda</h2>
+    <p style="font-size:13px;color:#999;text-align:center;margin:0 0 18px">Pakej popular paling banyak dipilih.</p>
+    <div id="jpl-pkgs" style="display:flex;flex-direction:column;gap:10px"></div>
+
+    <div style="margin-top:16px;background:#0E0E0E;border-radius:13px;padding:16px;color:#ddd">
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#999"><span id="jpl-selname">Pakej Super Berbaloi</span><span id="jpl-total2">$65.00</span></div>
+      <div style="height:1px;background:#2a2a2a;margin:11px 0"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:700;font-size:14px;color:#fff">Jumlah (COD)</span><span id="jpl-total" style="font-weight:800;font-size:23px;color:#fff">$65.00</span></div>
+    </div>
+
+    <a id="jpl-cta" href="#" class="jpl-cta" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:14px;background:#111;color:#fff;font-weight:800;font-size:16px;padding:18px;border-radius:13px;font-family:'Sora',sans-serif">ORDER VIA WHATSAPP →</a>
+    <div style="text-align:center;font-size:11px;color:#a3a3a3;margin-top:10px">Bayar hanya bila barang sampai · Tiada bayaran awal</div>
+  </div>
+
+  <div style="padding:6px 24px 30px"><p style="font-size:10px;line-height:1.6;color:#a3a3a3;text-align:center;margin:18px 0 0">Keberkesanan produk bergantung kepada cara penggunaan yang betul &amp; konsisten. Hasil individu mungkin berbeza. Produk ini amalan herba tradisional, bukan untuk merawat penyakit. © 2026 BS Legacy HQ. Hakcipta Terpelihara.</p></div>
+
+</div>
+</div>
+
+<script>
+(function(){
+  // ====== TUKAR NOMBOR WHATSAPP DI SINI (format antarabangsa, tanpa +) ======
+  var WA_NUMBER = "60145651872";
+  // =========================================================================
+
+  var PKGS = [
+    { name:"1 Paket Jamu Hitam",  desc:"Sesuai untuk cuba & rasa sendiri", price:45, count:1, tag:null },
+    { name:"2 Paket Jamu Hitam",  desc:"Stok untuk amalan berterusan",     price:55, count:2, tag:null },
+    { name:"3 Paket Jamu Hitam",  desc:"Amalan konsisten 3 bulan",          price:60, count:3, tag:null },
+    { name:"Pakej Super Berbaloi",desc:"3 Paket Jamu + 1 FREE GIFT",        price:65, count:3, tag:"PALING POPULAR" },
+    { name:"Pakej Jimat",         desc:"3 Paket Jamu + 2 FREE GIFT",        price:70, count:3, tag:"PALING BERBALOI" }
+  ];
+  var sel = 3;
+  var money = function(n){ return "$" + n.toFixed(2); };
+
+  var wrap = document.getElementById("jpl-pkgs");
+  PKGS.forEach(function(p, i){
+    var unit = p.count > 1 ? ("≈ " + money(p.price/p.count) + " / paket") : "Cuba dulu";
+    var tag = p.tag ? '<span style="font-size:9px;font-weight:800;letter-spacing:.03em;color:#fff;background:#111;padding:3px 7px;border-radius:20px">'+p.tag+'</span>' : '';
+    var el = document.createElement("div");
+    el.className = "jpl-card" + (i===sel ? " on" : "");
+    el.setAttribute("data-i", i);
+    el.innerHTML =
+      '<div class="jpl-radio"></div>' +
+      '<div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap"><span style="font-weight:700;font-size:14px">'+p.name+'</span>'+tag+'</div>' +
+      '<div style="font-size:12px;color:#7a7a7a;margin-top:3px">'+p.desc+'</div></div>' +
+      '<div style="text-align:right"><div style="font-weight:800;font-size:15.5px">'+money(p.price)+'</div><div style="font-size:9.5px;color:#a3a3a3">'+unit+'</div></div>';
+    el.addEventListener("click", function(){ sel = i; render(); });
+    wrap.appendChild(el);
+  });
+
+  function render(){
+    var p = PKGS[sel];
+    document.querySelectorAll("#jpl-pkgs .jpl-card").forEach(function(c){
+      c.className = "jpl-card" + (parseInt(c.getAttribute("data-i"),10)===sel ? " on" : "");
+    });
+    document.getElementById("jpl-selname").textContent = p.name;
+    document.getElementById("jpl-total").textContent  = money(p.price);
+    document.getElementById("jpl-total2").textContent = money(p.price);
+    var cta = document.getElementById("jpl-cta");
+    cta.textContent = "ORDER VIA WHATSAPP · " + money(p.price) + " →";
+    var msg = "Salam, saya nak order " + p.name + " (" + money(p.price) + ") secara COD.";
+    cta.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+  }
+  render();
+
+  // countdown 2 jam
+  var end = Date.now() + 2*3600*1000;
+  var cd = document.getElementById("jpl-cd");
+  function tick(){
+    var s = Math.max(0, Math.floor((end - Date.now())/1000));
+    var p = function(n){ return (n<10?"0":"") + n; };
+    cd.textContent = p(Math.floor(s/3600)) + ":" + p(Math.floor((s%3600)/60)) + ":" + p(s%60);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+</script>
