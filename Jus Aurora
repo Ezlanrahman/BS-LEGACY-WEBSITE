@@ -1,0 +1,306 @@
+<!-- ============================================================= -->
+<!-- JUS AURORA KASIH — Landing Page (tema Emerald Wellness)       -->
+<!-- Cara guna: WordPress > Edit page > tambah block "Custom HTML" -->
+<!-- > copy SEMUA dalam fail ni > paste > Update.                  -->
+<!-- Semua butang scroll ke form checkout (id="order").            -->
+<!-- Tukar id form / no WhatsApp di JS bawah (CHECKOUT_ID/WA).     -->
+<!-- ============================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  #jau-root *{box-sizing:border-box;margin:0;padding:0}
+  #jau-root{font-family:'Figtree',sans-serif;color:#1C2B22;line-height:1.45;display:flex;justify-content:center;background:#DCE8DD;padding:0;width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);overflow-x:hidden}
+  #jau-root .jau-page{width:100%;max-width:480px;background:#EDF3EC;overflow:hidden;box-shadow:0 0 60px rgba(15,60,45,.12)}
+  #jau-root h1,#jau-root h2{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.01em}
+  #jau-root a{text-decoration:none}
+  #jau-root .jau-eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;color:#C6871E;text-transform:uppercase}
+  #jau-root .jau-rule{height:1px;background:linear-gradient(90deg,transparent,#E0A52E,transparent)}
+  @keyframes jauPulse{0%,100%{box-shadow:0 8px 22px rgba(23,138,94,.30)}50%{box-shadow:0 12px 34px rgba(23,138,94,.50)}}
+  #jau-root .jau-cta{animation:jauPulse 2.4s ease-in-out infinite}
+  #jau-root .jau-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:#178A5E;color:#fff;font-weight:800;font-family:'Figtree',sans-serif;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(224,165,46,.40)}
+  #jau-root .jau-marquee{display:flex;width:max-content;animation:jauMarquee 20s linear infinite}
+  #jau-root .jau-marquee span{display:inline-flex;align-items:center;white-space:nowrap}
+  #jau-root .jau-mq-sep{width:5px;height:5px;border-radius:50%;background:#0C4234;margin:0 18px}
+  @keyframes jauMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  #jau-root .jau-track{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px}
+  #jau-root .jau-track::-webkit-scrollbar{display:none}
+  #jau-root .jau-slide{flex:0 0 82%;scroll-snap-align:center;border-radius:13px;overflow:hidden;border:1px solid #D5E2D2;background:#FBFDF9}
+  #jau-root .jau-slide img{display:block;width:100%;height:auto}
+  #jau-root .jau-dots{display:flex;justify-content:center;gap:6px;margin-top:12px}
+  #jau-root .jau-dot{width:7px;height:7px;border-radius:50%;background:#C4D6C2;transition:background .2s,width .2s}
+  #jau-root .jau-dot.on{background:#E0A52E;width:20px;border-radius:6px}
+  #jau-root .jau-cd-cell{flex:1;background:#0A3B30;border:1px solid #1c5444;border-radius:12px;padding:14px 6px;text-align:center}
+  #jau-root .jau-cd-num{font-family:'Bricolage Grotesque',sans-serif;font-size:34px;font-weight:800;color:#F0C46A;line-height:1;font-variant-numeric:tabular-nums}
+  #jau-root .jau-cd-lbl{font-size:10px;font-weight:700;letter-spacing:.1em;color:#7b9588;text-transform:uppercase;margin-top:7px}
+  #jau-root .jau-cd-colon{font-family:'Bricolage Grotesque',sans-serif;font-size:28px;font-weight:800;color:#3f6555;align-self:flex-start;margin-top:12px}
+  #jau-root .jau-pkg{transition:transform .12s,box-shadow .15s}
+  #jau-root .jau-pkg:active{transform:scale(.99)}
+  #jau-root .jau-pkg-hot{box-shadow:0 10px 26px rgba(23,138,94,.22)}
+  #jau-root .jau-pkg-go{flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:#178A5E;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;box-shadow:inset 0 0 0 1px rgba(224,165,46,.4)}
+</style>
+
+<div id="jau-root">
+<div class="jau-page">
+
+  <!-- header bar bergerak (marquee) -->
+  <div style="background:#F3C218;color:#0C4234;overflow:hidden;padding:11px 0;font-size:12px;font-weight:800;letter-spacing:.03em">
+    <div class="jau-marquee">
+      <span>TAWARAN TAMAT DALAM&nbsp;<b class="jau-cd" style="color:#0C4234;font-variant-numeric:tabular-nums">02:00:00</b></span><span class="jau-mq-sep"></span>
+      <span>11,500+ PENGGUNA</span><span class="jau-mq-sep"></span>
+      <span>PENGHANTARAN PERCUMA (COD)</span><span class="jau-mq-sep"></span>
+      <span>SIJIL HALAL &amp; MESTI</span><span class="jau-mq-sep"></span>
+      <span>TAWARAN TAMAT DALAM&nbsp;<b class="jau-cd" style="color:#0C4234;font-variant-numeric:tabular-nums">02:00:00</b></span><span class="jau-mq-sep"></span>
+      <span>11,500+ PENGGUNA</span><span class="jau-mq-sep"></span>
+      <span>PENGHANTARAN PERCUMA (COD)</span><span class="jau-mq-sep"></span>
+      <span>SIJIL HALAL &amp; MESTI</span><span class="jau-mq-sep"></span>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div style="background:#0E4D3E;color:#F1F8EF;padding:32px 24px 34px">
+    <div style="display:inline-flex;align-items:center;gap:6px;border:1px solid #2c6354;color:#E3F0DE;font-size:11px;font-weight:700;padding:6px 11px;border-radius:20px;letter-spacing:.02em">★★★★★ Dipercayai 11,500+ pengguna</div>
+    <h1 style="font-weight:800;font-size:33px;line-height:1.1;margin:16px 0 0;color:#FBFEF9">Kembali Selesa &amp; Bertenaga Secara Semula Jadi</h1>
+    <p style="font-size:14.5px;line-height:1.55;color:#a9c8b8;margin:13px 0 0">Jus Aurora Kasih — minuman herba campuran semula jadi untuk bantu jaga kesejahteraan perut, angin &amp; tenaga harian anda.</p>
+    <div style="border-radius:14px;overflow:hidden;margin-top:18px;border:1px solid #2c6354">
+      <img src="https://jusaurorasg.com/wp-content/uploads/2026/04/ChatGPT-Image-Apr-21-2026-02_14_58-PM-576x1024.png" alt="Jus Aurora Kasih" style="display:block;width:100%;height:auto" loading="lazy">
+    </div>
+    <div style="background:#0A3B30;border:1px solid #1c5444;border-radius:12px;padding:14px 16px;margin-top:16px">
+      <p style="font-size:13px;line-height:1.6;color:#cfe3d6;text-align:center">“Sesungguhnya Allah ketika menciptakan penyakit, diciptakan juga penawar. Maka berubatlah kamu.”</p>
+      <p style="font-size:10.5px;color:#7b9588;text-align:center;margin-top:6px">Riwayat Ahmad (12596)</p>
+    </div>
+    <a class="jau-checkout jau-btn jau-cta" href="#" style="margin-top:18px;font-size:16px;padding:17px">KLIK UNTUK SIHAT →</a>
+  </div>
+
+  <!-- trust badges -->
+  <div style="display:flex;gap:8px;padding:16px 16px 0">
+    <div style="flex:1;background:#FBFDF9;border:1px solid #D5E2D2;border-radius:10px;padding:10px;text-align:center;font-size:11px;font-weight:700;color:#1C2B22">✦ COD<br><span style="color:#6E8076;font-weight:500">Bayar bila sampai</span></div>
+    <div style="flex:1;background:#FBFDF9;border:1px solid #D5E2D2;border-radius:10px;padding:10px;text-align:center;font-size:11px;font-weight:700;color:#1C2B22">✦ Halal<br><span style="color:#6E8076;font-weight:500">MESTI &amp; ISO</span></div>
+    <div style="flex:1;background:#FBFDF9;border:1px solid #D5E2D2;border-radius:10px;padding:10px;text-align:center;font-size:11px;font-weight:700;color:#1C2B22">✦ 100%<br><span style="color:#6E8076;font-weight:500">Semula jadi</span></div>
+  </div>
+
+  <!-- masalah -->
+  <div style="padding:24px 24px 4px">
+    <div class="jau-eyebrow">Perhatikan tanda-tanda ini</div>
+    <h2 style="font-weight:700;font-size:24px;margin:8px 0 16px;color:#1C2B22">Kerap rasa tak selesa begini?</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px">
+      <div style="background:#FBFDF9;border:1px solid #D5E2D2;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Gastrik &amp; perut tak selesa</div>
+      <div style="background:#FBFDF9;border:1px solid #D5E2D2;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Kembung &amp; angin</div>
+      <div style="background:#FBFDF9;border:1px solid #D5E2D2;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Urat &amp; sendi lenguh</div>
+      <div style="background:#FBFDF9;border:1px solid #D5E2D2;border-radius:11px;padding:14px;font-size:13px;font-weight:600">Cepat letih &amp; lesu</div>
+    </div>
+    <div style="border-radius:14px;overflow:hidden;margin-top:16px;border:1px solid #D5E2D2">
+      <img src="https://jusaurorasg.com/wp-content/uploads/2026/04/ChatGPT-Image-Apr-21-2026-02_22_36-PM-683x1024.png" alt="Tanda-tanda" style="display:block;width:100%;height:auto" loading="lazy">
+    </div>
+  </div>
+
+  <!-- perkenalkan -->
+  <div style="margin:28px 16px 4px;background:#0E4D3E;border-radius:18px;padding:30px 24px;color:#F1F8EF">
+    <div class="jau-eyebrow" style="color:#E6B045">Ini solusinya</div>
+    <h2 style="font-weight:800;font-size:27px;margin:8px 0 0;color:#FBFEF9">Jus Aurora Kasih</h2>
+    <div style="max-width:54px;margin:14px 0 0" class="jau-rule"></div>
+    <p style="font-size:17px;line-height:1.45;font-weight:600;color:#e3f0de;margin:14px 0 0">“Minuman herba campuran diimport khas — 100% semula jadi, dimasak sendiri dengan 4 jenis herba tanpa bahan kimia.”</p>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:16px">
+      <div style="display:flex;gap:10px;align-items:center"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:6px;background:#0A3B30;color:#F0C46A;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800">✓</span><span style="font-size:13.5px;color:#dcebe0;font-weight:600">100% semula jadi</span></div>
+      <div style="display:flex;gap:10px;align-items:center"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:6px;background:#0A3B30;color:#F0C46A;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800">✓</span><span style="font-size:13.5px;color:#dcebe0;font-weight:600">Patented ingredients</span></div>
+      <div style="display:flex;gap:10px;align-items:center"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:6px;background:#0A3B30;color:#F0C46A;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800">✓</span><span style="font-size:13.5px;color:#dcebe0;font-weight:600">Formulasi &amp; teknologi tinggi</span></div>
+    </div>
+  </div>
+
+  <!-- kenapa pilih -->
+  <div style="padding:28px 24px 4px">
+    <h2 style="font-weight:700;font-size:24px;text-align:center;margin:0 0 14px;color:#1C2B22">Kenapa Ramai Pilih Jus Aurora?</h2>
+    <div style="border-radius:14px;overflow:hidden;border:1px solid #D5E2D2">
+      <img src="https://jusaurorasg.com/wp-content/uploads/2026/04/ChatGPT-Image-Apr-21-2026-03_28_22-PM-683x1024.png" alt="Kenapa pilih Jus Aurora" style="display:block;width:100%;height:auto" loading="lazy">
+    </div>
+    <a class="jau-checkout jau-btn jau-cta" href="#" style="margin-top:16px;font-size:16px;padding:17px">KLIK UNTUK SIHAT →</a>
+  </div>
+
+  <!-- bahan utama -->
+  <div style="padding:24px 24px 4px">
+    <div style="max-width:60px;margin:0 auto 14px" class="jau-rule"></div>
+    <h2 style="font-weight:700;font-size:24px;text-align:center;margin:0 0 6px;color:#1C2B22">Bahan Utama</h2>
+    <p style="font-size:13.5px;color:#6E8076;text-align:center;margin:0 0 16px">Pure extract 100% bahan semula jadi, 4 jenis herba pilihan.</p>
+    <div style="border-radius:14px;overflow:hidden;border:1px solid #D5E2D2">
+      <img src="https://jusaurorasg.com/wp-content/uploads/2026/04/ChatGPT-Image-Apr-21-2026-02_27_11-PM-683x1024.png" alt="Bahan utama Jus Aurora" style="display:block;width:100%;height:auto" loading="lazy">
+    </div>
+  </div>
+
+  <!-- testimoni carousel -->
+  <div style="padding:30px 24px 4px">
+    <h2 style="font-weight:700;font-size:24px;text-align:center;margin:0 0 6px;color:#1C2B22">Apa Kata Mereka?</h2>
+    <p style="font-size:13px;color:#6E8076;text-align:center;margin:0 0 16px">Pengalaman pengguna yang berpuas hati.</p>
+    <div class="jau-track" id="jau-testi-track">
+      <div class="jau-slide"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/photo_2026-04-21_16-37-55-2-682x1024.jpg" alt="Testimoni pengguna" loading="lazy"></div>
+      <div class="jau-slide"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/photo_2026-04-21_16-37-55-682x1024.jpg" alt="Testimoni pengguna" loading="lazy"></div>
+      <div class="jau-slide"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/photo_2026-04-21_16-37-54-4-682x1024.jpg" alt="Testimoni pengguna" loading="lazy"></div>
+      <div class="jau-slide"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/photo_2026-04-21_16-37-54-5-682x1024.jpg" alt="Testimoni pengguna" loading="lazy"></div>
+      <div class="jau-slide"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/photo_2026-04-21_16-37-54-3-682x1024.jpg" alt="Testimoni pengguna" loading="lazy"></div>
+    </div>
+    <div class="jau-dots" id="jau-testi-dots"></div>
+
+    <div style="display:flex;flex-direction:column;gap:11px;margin-top:18px">
+      <div style="background:#FBFDF9;border:1px solid #D5E2D2;border-radius:13px;padding:16px"><span style="color:#178A5E;font-size:11px;letter-spacing:1px">★★★★★</span><p style="font-size:13px;line-height:1.55;color:#3d4f45;margin:8px 0 0">“Lepas amal Jus Aurora ni perut rasa lebih selesa, kurang kembung. Badan pun rasa lebih ringan.”</p><p style="font-size:12px;font-weight:700;color:#1C2B22;margin:8px 0 0">— Puan Wan</p></div>
+      <div style="background:#FBFDF9;border:1px solid #D5E2D2;border-radius:13px;padding:16px"><span style="color:#178A5E;font-size:11px;letter-spacing:1px">★★★★★</span><p style="font-size:13px;line-height:1.55;color:#3d4f45;margin:8px 0 0">“Senang nak amal, rasa pun sedap. COD pulak senang, barang sampai baru bayar.”</p><p style="font-size:12px;font-weight:700;color:#1C2B22;margin:8px 0 0">— Cik Mira</p></div>
+    </div>
+    <p style="font-size:10.5px;color:#9aab9f;text-align:center;margin:13px 4px 0">Hasil mungkin berbeza mengikut individu.</p>
+  </div>
+
+  <!-- sijil -->
+  <div style="padding:26px 24px 4px">
+    <div class="jau-eyebrow" style="text-align:center">Kelulusan &amp; sijil sah</div>
+    <h2 style="font-weight:700;font-size:22px;text-align:center;margin:8px 0 16px;color:#1C2B22">Halal · MESTI · ISO · FOSIM</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="border-radius:12px;overflow:hidden;border:1px solid #D5E2D2;background:#FBFDF9"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/ttttt-724x1024.png" alt="Sijil" style="display:block;width:100%;height:auto" loading="lazy"></div>
+      <div style="border-radius:12px;overflow:hidden;border:1px solid #D5E2D2;background:#FBFDF9"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/55tt-724x1024.png" alt="Sijil" style="display:block;width:100%;height:auto" loading="lazy"></div>
+      <div style="border-radius:12px;overflow:hidden;border:1px solid #D5E2D2;background:#FBFDF9"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/hhthgh-724x1024.png" alt="Sijil" style="display:block;width:100%;height:auto" loading="lazy"></div>
+      <div style="border-radius:12px;overflow:hidden;border:1px solid #D5E2D2;background:#FBFDF9"><img src="https://jusaurorasg.com/wp-content/uploads/2026/04/t44ttr-724x1024.png" alt="Sijil" style="display:block;width:100%;height:auto" loading="lazy"></div>
+    </div>
+  </div>
+
+  <!-- countdown block -->
+  <div style="margin:24px 16px 4px;background:#0E4D3E;border-radius:18px;padding:24px 20px;text-align:center">
+    <div class="jau-eyebrow" style="color:#E6B045">Promosi tamat dalam</div>
+    <h2 style="font-weight:800;font-size:22px;color:#FBFEF9;margin:8px 0 18px">Jangan Tunggu Lagi</h2>
+    <div style="display:flex;gap:8px;align-items:flex-start;justify-content:center">
+      <div class="jau-cd-cell"><div class="jau-cd-num" id="jau-cd2-h">00</div><div class="jau-cd-lbl">Jam</div></div>
+      <div class="jau-cd-colon">:</div>
+      <div class="jau-cd-cell"><div class="jau-cd-num" id="jau-cd2-m">00</div><div class="jau-cd-lbl">Minit</div></div>
+      <div class="jau-cd-colon">:</div>
+      <div class="jau-cd-cell"><div class="jau-cd-num" id="jau-cd2-s">00</div><div class="jau-cd-lbl">Saat</div></div>
+    </div>
+    <a class="jau-checkout jau-btn jau-cta" href="#" style="margin-top:20px;font-size:16px;padding:17px">KLIK UNTUK SIHAT →</a>
+  </div>
+
+  <!-- pakej -->
+  <div style="padding:24px 24px 4px">
+    <div style="max-width:60px;margin:0 auto 14px" class="jau-rule"></div>
+    <h2 style="font-weight:700;font-size:25px;text-align:center;margin:0 0 4px;color:#1C2B22">Pilih Pakej Anda</h2>
+    <p style="font-size:13px;color:#6E8076;text-align:center;margin:0 0 18px">Semua pakej free COD Semenanjung Malaysia.</p>
+    <div style="display:flex;flex-direction:column;gap:11px">
+
+      <a class="jau-checkout jau-pkg jau-pkg-hot" href="#" style="display:flex;gap:13px;align-items:center;background:#FBFDF9;border:2px solid #178A5E;border-radius:14px;padding:10px;color:inherit;position:relative">
+        <img src="https://jusaurorasg.com/wp-content/uploads/2026/03/photo_2026-03-13_22-22-21-3-450x450.jpg" alt="3 Botol Jus Aurora" style="flex:0 0 auto;width:78px;height:78px;border-radius:10px;object-fit:cover;border:1px solid #D5E2D2" loading="lazy">
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"><span style="font-weight:800;font-size:14.5px;color:#1C2B22">Pakej Sihat · 3 Botol</span><span style="font-size:9px;font-weight:800;letter-spacing:.03em;color:#fff;background:#178A5E;padding:3px 7px;border-radius:20px">PALING POPULAR</span></div>
+          <div style="font-size:12px;color:#6E8076;margin-top:2px">3 Botol + Free COD Semenanjung</div>
+          <div style="display:flex;align-items:baseline;gap:7px;margin-top:6px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#0E4D3E">RM100</span><span style="font-size:11px;color:#9aab9f">≈ RM33/botol</span></div>
+        </div>
+        <span class="jau-pkg-go">→</span>
+      </a>
+
+      <a class="jau-checkout jau-pkg" href="#" style="display:flex;gap:13px;align-items:center;background:#FBFDF9;border:1px solid #D5E2D2;border-radius:14px;padding:11px;color:inherit">
+        <img src="https://jusaurorasg.com/wp-content/uploads/2026/03/photo_2026-03-13_22-22-21-2-450x450.jpg" alt="2 Botol Jus Aurora" style="flex:0 0 auto;width:78px;height:78px;border-radius:10px;object-fit:cover;border:1px solid #D5E2D2" loading="lazy">
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:800;font-size:14.5px;color:#1C2B22">Pakej Jimat · 2 Botol</div>
+          <div style="font-size:12px;color:#6E8076;margin-top:2px">2 Botol + Free COD Semenanjung</div>
+          <div style="display:flex;align-items:baseline;gap:7px;margin-top:6px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#0E4D3E">RM89</span><span style="font-size:11px;color:#9aab9f">≈ RM44/botol</span></div>
+        </div>
+        <span class="jau-pkg-go">→</span>
+      </a>
+
+      <a class="jau-checkout jau-pkg" href="#" style="display:flex;gap:13px;align-items:center;background:#FBFDF9;border:1px solid #D5E2D2;border-radius:14px;padding:11px;color:inherit">
+        <img src="https://jusaurorasg.com/wp-content/uploads/2026/03/photo_2026-03-13_22-22-21-450x450.jpg" alt="1 Botol Jus Aurora" style="flex:0 0 auto;width:78px;height:78px;border-radius:10px;object-fit:cover;border:1px solid #D5E2D2" loading="lazy">
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:800;font-size:14.5px;color:#1C2B22">Pakej Percubaan · 1 Botol</div>
+          <div style="font-size:12px;color:#6E8076;margin-top:2px">1 Botol + Free COD Semenanjung</div>
+          <div style="margin-top:6px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#0E4D3E">RM55</span></div>
+        </div>
+        <span class="jau-pkg-go">→</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TEMPAT FORM CHECKOUT CARTFLOWS HANG (id="order")             -->
+  <!-- Letak block form CartFlows hang TEPAT selepas block ni.      -->
+  <!-- ============================================================ -->
+  <div id="jau-checkout-form" style="padding:8px 16px 4px">
+    <!-- paste / letak form CartFlows hang di sini atau selepas block ni -->
+  </div>
+
+</div>
+</div>
+
+<script>
+(function(){
+  // ====== TETAPAN ======
+  var CHECKOUT_ID = "order";        // id form checkout
+  var WA_NUMBER   = "60145651872";  // no WhatsApp
+  var WA_PATH     = "jusauroramy";  // path link wasap.my (boleh kosongkan)
+  // =====================
+
+  document.querySelectorAll("#jau-root .jau-checkout").forEach(function(a){
+    a.setAttribute("href", "#" + CHECKOUT_ID);
+    a.addEventListener("click", function(e){
+      var target = document.getElementById(CHECKOUT_ID);
+      if(target){ e.preventDefault(); target.scrollIntoView({ behavior:"smooth", block:"start" }); }
+    });
+  });
+
+  var wa = document.getElementById("jau-wa-btn");
+  if(wa){ wa.setAttribute("href", "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent("Salam, saya berminat dengan Jus Aurora Kasih.")); }
+
+  // carousel testimoni — dot indicator
+  (function(){
+    var track = document.getElementById("jau-testi-track");
+    var dotsWrap = document.getElementById("jau-testi-dots");
+    if(!track || !dotsWrap) return;
+    var slides = track.querySelectorAll(".jau-slide");
+    slides.forEach(function(_, i){
+      var d = document.createElement("div");
+      d.className = "jau-dot" + (i===0 ? " on" : "");
+      d.addEventListener("click", function(){
+        track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior:"smooth" });
+      });
+      dotsWrap.appendChild(d);
+    });
+    var dots = dotsWrap.querySelectorAll(".jau-dot");
+    var raf;
+    track.addEventListener("scroll", function(){
+      if(raf) return;
+      raf = requestAnimationFrame(function(){
+        raf = null;
+        var center = track.scrollLeft + track.clientWidth/2;
+        var best = 0, bestDist = Infinity;
+        slides.forEach(function(s, i){
+          var sc = s.offsetLeft + s.clientWidth/2;
+          var dist = Math.abs(sc - center);
+          if(dist < bestDist){ bestDist = dist; best = i; }
+        });
+        dots.forEach(function(d, i){ d.className = "jau-dot" + (i===best ? " on" : ""); });
+      });
+    });
+  })();
+
+  // countdown header (marquee) — 2 jam
+  var end = Date.now() + 2*3600*1000;
+  var cds = document.querySelectorAll(".jau-cd");
+  function tick(){
+    var s = Math.max(0, Math.floor((end - Date.now())/1000));
+    var p = function(n){ return (n<10?"0":"") + n; };
+    var txt = p(Math.floor(s/3600)) + ":" + p(Math.floor((s%3600)/60)) + ":" + p(s%60);
+    cds.forEach(function(el){ el.textContent = txt; });
+  }
+  tick(); setInterval(tick, 1000);
+
+  // countdown block — ke tengah malam
+  var h2el = document.getElementById("jau-cd2-h");
+  var m2el = document.getElementById("jau-cd2-m");
+  var s2el = document.getElementById("jau-cd2-s");
+  if(h2el && m2el && s2el){
+    var pad = function(n){ return (n<10?"0":"") + n; };
+    function tick2(){
+      var now = new Date();
+      var mid = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1, 0, 0, 0, 0);
+      var s = Math.max(0, Math.floor((mid - now)/1000));
+      h2el.textContent = pad(Math.floor(s/3600));
+      m2el.textContent = pad(Math.floor((s%3600)/60));
+      s2el.textContent = pad(s%60);
+    }
+    tick2(); setInterval(tick2, 1000);
+  }
+})();
+</script>
