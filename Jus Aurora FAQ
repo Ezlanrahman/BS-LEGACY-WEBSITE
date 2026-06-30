@@ -1,0 +1,118 @@
+<!-- ============================================================= -->
+<!-- JUS AURORA KASIH — FAQ + WhatsApp + Disclaimer (tema hijau)   -->
+<!-- BLOCK ASING. Letak block "Custom HTML" ni DI BAWAH SEKALI     -->
+<!-- (selepas form CartFlows hang).                                -->
+<!-- Tukar nombor WhatsApp di JS bawah (cari WA_NUMBER).           -->
+<!-- ============================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  #jauf-root *{box-sizing:border-box;margin:0;padding:0}
+  #jauf-root{font-family:'Figtree',sans-serif;color:#1C2B22;line-height:1.45;display:flex;justify-content:center;background:#DCE8DD;padding:0;width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);overflow-x:hidden}
+  #jauf-root .jauf-page{width:100%;max-width:480px;background:#EDF3EC;overflow:hidden}
+  #jauf-root h2{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.01em}
+  #jauf-root a{text-decoration:none}
+  #jauf-root .jauf-eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;color:#C6871E;text-transform:uppercase}
+  #jauf-root .jauf-item{background:#FBFDF9;border:1px solid #D5E2D2;border-radius:13px;overflow:hidden}
+  #jauf-root .jauf-q{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:16px;font-family:'Figtree',sans-serif;font-weight:700;font-size:14px;color:#1C2B22}
+  #jauf-root .jauf-ic{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:#0E4D3E;color:#F0C46A;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;transition:transform .25s}
+  #jauf-root .jauf-item.on .jauf-ic{transform:rotate(45deg)}
+  #jauf-root .jauf-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  #jauf-root .jauf-a p{padding:0 16px 16px;font-size:13px;line-height:1.6;color:#566;}
+  @keyframes jaufPulse{0%,100%{box-shadow:0 8px 22px rgba(23,138,94,.30)}50%{box-shadow:0 12px 32px rgba(23,138,94,.50)}}
+  #jauf-root .jauf-wa{animation:jaufPulse 2.4s ease-in-out infinite}
+</style>
+
+<div id="jauf-root">
+<div class="jauf-page">
+
+  <!-- FAQ -->
+  <div style="padding:30px 24px 4px">
+    <div class="jauf-eyebrow" style="text-align:center">Soalan Lazim</div>
+    <h2 style="font-weight:700;font-size:24px;text-align:center;margin:8px 0 18px;color:#1C2B22">Ada Soalan? Kami Jawab</h2>
+    <div style="display:flex;flex-direction:column;gap:10px">
+
+      <div class="jauf-item">
+        <button class="jauf-q">Macam mana cara nak order?<span class="jauf-ic">+</span></button>
+        <div class="jauf-a"><p>Mudah je — pilih pakej yang anda nak, klik butang "Klik Untuk Sihat", dan lengkapkan borang di ruangan checkout. Kami proses order anda dengan segera.</p></div>
+      </div>
+
+      <div class="jauf-item">
+        <button class="jauf-q">Bayaran macam mana? Ada COD?<span class="jauf-ic">+</span></button>
+        <div class="jauf-a"><p>Ya, kami sediakan COD (barang sampai baru bayar) untuk Semenanjung Malaysia secara percuma. Sabah &amp; Sarawak dikenakan caj penghantaran. Boleh juga bayar guna online banking / DuitNow QR.</p></div>
+      </div>
+
+      <div class="jauf-item">
+        <button class="jauf-q">Berapa lama penghantaran?<span class="jauf-ic">+</span></button>
+        <div class="jauf-a"><p>Penghantaran biasanya mengambil masa 2–5 hari bekerja bergantung kepada lokasi anda. Order dibungkus rapi sebelum dihantar.</p></div>
+      </div>
+
+      <div class="jauf-item">
+        <button class="jauf-q">Produk ni Halal &amp; ada sijil?<span class="jauf-ic">+</span></button>
+        <div class="jauf-a"><p>Ya. Jus Aurora Kasih diperakui dengan sijil Halal, MESTI, ISO dan FOSIM — jadi anda boleh amalkan dengan tenang.</p></div>
+      </div>
+
+      <div class="jauf-item">
+        <button class="jauf-q">Macam mana cara nak amal?<span class="jauf-ic">+</span></button>
+        <div class="jauf-a"><p>Cara amalan akan disertakan bersama produk. Untuk hasil terbaik, amalkan secara konsisten mengikut panduan. Hasil mungkin berbeza mengikut individu.</p></div>
+      </div>
+
+      <div class="jauf-item">
+        <button class="jauf-q">Boleh repeat order?<span class="jauf-ic">+</span></button>
+        <div class="jauf-a"><p>Boleh! Ramai pelanggan kami buat repeat order. Lepas habis stok, anda boleh order semula bila-bila masa melalui page ni atau hubungi admin kami terus.</p></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- perlukan bantuan -> WhatsApp -->
+  <div style="padding:24px 24px 4px">
+    <div style="background:#0E4D3E;border-radius:18px;padding:26px 24px;text-align:center;color:#F1F8EF">
+      <h2 style="font-weight:800;font-size:21px;margin:0 0 8px;color:#FBFEF9">Perlukan Bantuan?</h2>
+      <p style="font-size:13.5px;line-height:1.55;color:#a9c8b8;margin:0 0 20px">Ada soalan atau nak order terus? Klik butang di bawah untuk chat admin kami di WhatsApp.</p>
+      <a id="jauf-wa-btn" class="jauf-wa" href="#" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:9px;width:100%;background:#178A5E;color:#fff;font-weight:800;font-size:16px;padding:17px;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(224,165,46,.4)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.74-.86-2-.96-.27-.1-.46-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.34.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.18-.24-.57-.48-.5-.66-.5-.17-.01-.37-.01-.56-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.13-.27-.2-.56-.35zM12.04 21.5h-.01a9.45 9.45 0 01-4.83-1.32l-.35-.2-3.59.94.96-3.5-.23-.36a9.46 9.46 0 01-1.45-5.03c0-5.23 4.26-9.49 9.5-9.49 2.54 0 4.92.99 6.71 2.78a9.43 9.43 0 012.78 6.72c0 5.23-4.26 9.49-9.5 9.49zm8.07-17.56A11.36 11.36 0 0012.04.6C5.76.6.64 5.72.64 12c0 2.02.53 3.99 1.53 5.73L.5 23.4l5.8-1.52a11.36 11.36 0 005.74 1.46h.01c6.28 0 11.4-5.12 11.4-11.4 0-3.05-1.19-5.91-3.34-8.06z"/></svg>
+        HUBUNGI ADMIN WHATSAPP
+      </a>
+      <div style="font-size:11px;color:#7ea38f;margin-top:12px">Kami balas secepat mungkin pada waktu bekerja</div>
+    </div>
+  </div>
+
+  <!-- disclaimer -->
+  <div style="padding:8px 24px 32px">
+    <p style="font-size:10px;line-height:1.6;color:#9aab9f;text-align:center;margin:14px 0 0">Jus Aurora Kasih ialah minuman herba tradisional untuk menyokong kesejahteraan umum &amp; bukan bertujuan untuk mendiagnos, merawat, menyembuh atau mencegah sebarang penyakit. Sila rujuk doktor untuk masalah kesihatan. Hasil mungkin berbeza mengikut individu. © 2026 Jus Aurora Kasih. Hakcipta Terpelihara.</p>
+  </div>
+
+</div>
+</div>
+
+<script>
+(function(){
+  // ====== TUKAR NOMBOR WHATSAPP DI SINI (format antarabangsa, tanpa +) ======
+  var WA_NUMBER = "60145651872";
+  // =========================================================================
+
+  var waMsg = "Salam, saya ada soalan / nak order Jus Aurora Kasih.";
+  var waBtn = document.getElementById("jauf-wa-btn");
+  if(waBtn){ waBtn.setAttribute("href", "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(waMsg)); }
+
+  // accordion FAQ
+  document.querySelectorAll("#jauf-root .jauf-item").forEach(function(item){
+    var q = item.querySelector(".jauf-q");
+    var a = item.querySelector(".jauf-a");
+    q.addEventListener("click", function(){
+      var open = item.classList.contains("on");
+      document.querySelectorAll("#jauf-root .jauf-item").forEach(function(it){
+        it.classList.remove("on");
+        it.querySelector(".jauf-a").style.maxHeight = null;
+      });
+      if(!open){
+        item.classList.add("on");
+        a.style.maxHeight = a.scrollHeight + "px";
+      }
+    });
+  });
+})();
+</script>
