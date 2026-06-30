@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auralisse - Bahagian Bawah (FAQ & Footer)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FCF9F6',
+                            primary: '#8B3A46',
+                            dark: '#2A2521',
+                            gold: '#D9C5B2',
+                            accent: '#F4EBE1'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #FCF9F6; color: #2A2521; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        .premium-bg { background: linear-gradient(180deg, #FCF9F6 0%, #F4EBE1 100%); }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }
+    </style>
+</head>
+<body class="font-sans relative">
+
+    <!-- FAQ SECTION -->
+    <section class="py-16 md:py-24 bg-brand-bg">
+        <div class="max-w-2xl mx-auto px-5">
+            <div class="text-center mb-10">
+                <span class="text-brand-primary text-xs uppercase tracking-widest font-semibold">Soalan Lazim</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mt-3">Ada Persoalan? Kami Jawab</h2>
+            </div>
+            <div class="space-y-3">
+                <details class="bg-white rounded-xl border border-brand-gold/30 px-5 py-4 group">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-sm text-brand-dark">
+                        Berapa lama untuk nampak kesannya?
+                        <span class="faq-icon text-brand-primary text-xl transition-transform shrink-0">+</span>
+                    </summary>
+                    <p class="text-xs text-brand-dark/60 leading-relaxed mt-3">Kebanyakan pengguna mula rasa lebih selesa dalam beberapa hari. Untuk hasil terbaik & konsisten, kami sarankan penggunaan berterusan (Set Konsisten 2 Kotak).</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-gold/30 px-5 py-4 group">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-sm text-brand-dark">
+                        Adakah Auralisse selamat digunakan?
+                        <span class="faq-icon text-brand-primary text-xl transition-transform shrink-0">+</span>
+                    </summary>
+                    <p class="text-xs text-brand-dark/60 leading-relaxed mt-3">Ya. Auralisse diproses di kilang bertaraf GMP menggunakan 100% herba terpilih tanpa campuran berbahaya. Namun, jika anda hamil atau mempunyai alahan kritikal terhadap herba, sila rujuk doktor terlebih dahulu.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-gold/30 px-5 py-4 group">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-sm text-brand-dark">
+                        Macam mana cara nak order & bayar?
+                        <span class="faq-icon text-brand-primary text-xl transition-transform shrink-0">+</span>
+                    </summary>
+                    <p class="text-xs text-brand-dark/60 leading-relaxed mt-3">Mudah! Pilih pakej anda dan isi maklumat di borang tempahan di atas. Pilihan COD tersedia — anda bayar hanya selepas barang sampai ke tangan anda.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-gold/30 px-5 py-4 group">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-sm text-brand-dark">
+                        Adakah bungkusan dijaga privasinya?
+                        <span class="faq-icon text-brand-primary text-xl transition-transform shrink-0">+</span>
+                    </summary>
+                    <p class="text-xs text-brand-dark/60 leading-relaxed mt-3">Sudah tentu. Setiap pesanan dibungkus secara diskret tanpa menunjukkan kandungan, demi menjaga privasi anda sepenuhnya.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-gold/30 px-5 py-4 group">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-sm text-brand-dark">
+                        Berapa lama tempoh penghantaran?
+                        <span class="faq-icon text-brand-primary text-xl transition-transform shrink-0">+</span>
+                    </summary>
+                    <p class="text-xs text-brand-dark/60 leading-relaxed mt-3">Kami menghantar ke seluruh Malaysia. Kebiasaannya barang sampai dalam 2–4 hari bekerja bergantung lokasi anda.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIAPA TAK PATUT BELI -->
+    <section class="py-12 bg-white border-t border-brand-gold/30">
+        <div class="max-w-2xl mx-auto px-5">
+            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center">
+                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-widest mb-3">Penting: Auralisse Bukan Untuk Semua</h3>
+                <p class="text-xs text-gray-600 leading-relaxed mb-4">
+                    Produk ini adalah persediaan penjagaan rutin wanita. <strong>Kami tidak mengesyorkan produk ini jika anda:</strong>
+                </p>
+                <ul class="text-left text-xs text-gray-600 space-y-2 max-w-sm mx-auto">
+                    <li class="flex items-start gap-2"><span class="text-red-500">✕</span> Sedang hamil.</li>
+                    <li class="flex items-start gap-2"><span class="text-red-500">✕</span> Mencari "ubat magik" yang menyembuhkan penyakit kronik dalam 24 jam.</li>
+                    <li class="flex items-start gap-2"><span class="text-red-500">✕</span> Mempunyai alahan kritikal terhadap herba (sila rujuk doktor).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA TERAKHIR -->
+    <section class="py-16 md:py-24 premium-bg text-center border-t border-brand-gold/30">
+        <div class="max-w-2xl mx-auto px-5">
+            <h2 class="font-serif text-3xl md:text-4xl text-brand-dark leading-tight mb-4">
+                Sedia Untuk Melengkapkan Rutin Anda?
+            </h2>
+            <p class="text-sm text-brand-dark/70 mb-8 font-light">
+                Skrol ke atas, pilih pakej anda dan lengkapkan tempahan. Urusan pantas, selamat dan dijamin privasi.
+            </p>
+            <a href="#order" class="inline-block bg-brand-primary text-white px-10 py-4 rounded-full font-semibold tracking-wide shadow-xl hover:shadow-2xl hover:bg-[#7a323d] transition-all uppercase text-sm">
+                Tempah Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-white/60 py-12 text-xs border-t border-white/10 text-center">
+        <div class="max-w-3xl mx-auto px-5 space-y-4">
+            <span class="font-serif text-xl text-white tracking-widest block">AURALISSE</span>
+            <p class="leading-relaxed font-light">
+                Penafian: Maklumat di halaman ini tidak bertujuan untuk menggantikan nasihat profesional kesihatan. Kesan produk berbeza mengikut fizikal individu.
+            </p>
+            <div class="pt-4 flex justify-center gap-6 font-light">
+                <a href="#" class="hover:text-white transition-colors">Polisi Privasi</a>
+                <a href="#" class="hover:text-white transition-colors">Terma & Syarat</a>
+            </div>
+            <p class="pt-4 opacity-50">&copy; 2026 Auralisse Beauty. Semua Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
