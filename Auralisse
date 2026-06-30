@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auralisse Beauty | Penjagaan Dalaman Wanita Premium</title>
+    <meta name="description" content="Auralisse membawakan khasiat makjun warisan secara moden dan eksklusif untuk rutin penjagaan wanita.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FCF9F6',       /* Soft Cream */
+                            primary: '#8B3A46',  /* Premium Maroon / Muted Rose */
+                            dark: '#2A2521',     /* Charcoal */
+                            gold: '#D9C5B2',     /* Muted Gold */
+                            accent: '#F4EBE1'    /* Lighter cream */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #FCF9F6; color: #2A2521; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        .premium-bg { background: linear-gradient(180deg, #FCF9F6 0%, #F4EBE1 100%); }
+        .card-shadow { box-shadow: 0 10px 30px -10px rgba(139, 58, 70, 0.08); }
+        .mobile-cta-shadow { box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.05); }
+
+        /* Animasi Marquee Bergerak Lancar */
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 20s linear infinite;
+        }
+        .marquee-container { overflow: hidden; white-space: nowrap; width: 100%; }
+
+        /* Reveal-on-scroll */
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+        .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+        /* Floating WA pulse */
+        @keyframes wa-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); }
+            70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .wa-pulse { animation: wa-pulse 2.2s infinite; }
+
+        /* Sembunyi scrollbar carousel */
+        #fbTrack::-webkit-scrollbar { display: none; }
+
+        /* FAQ accordion */
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }
+    </style>
+</head>
+<body class="font-sans relative">
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/60145651872?text=saya%20nak%20order%20Auralisse" aria-label="WhatsApp" target="_blank"
+       class="group fixed bottom-24 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-0 md:hover:gap-3 bg-[#25D366] text-white rounded-full shadow-xl wa-pulse active:scale-95 hover:shadow-2xl transition-all duration-300 overflow-hidden pr-0 md:hover:pr-5">
+        <span class="w-14 h-14 flex items-center justify-center shrink-0">
+            <svg viewBox="0 0 32 32" class="w-7 h-7 fill-white transition-transform duration-300 group-hover:rotate-[8deg]"><path d="M16.04 4C9.93 4 5 8.93 5 15.04c0 2.13.6 4.12 1.64 5.81L5 28l7.34-1.6a11 11 0 0 0 3.7.64h.01c6.11 0 11.04-4.93 11.04-11.04S22.15 4 16.04 4zm0 20.1h-.01c-1.16 0-2.3-.31-3.29-.9l-.24-.14-2.45.53.52-2.39-.16-.25a8.99 8.99 0 0 1-1.38-4.8c0-4.97 4.05-9.02 9.02-9.02 2.41 0 4.67.94 6.38 2.64a8.96 8.96 0 0 1 2.64 6.38c0 4.97-4.05 9.95-9.03 9.95zm4.95-6.74c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.65 1.12 2.83c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.28.22-.63.22-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/></svg>
+        </span>
+        <span class="hidden md:inline-block max-w-0 group-hover:max-w-[160px] whitespace-nowrap overflow-hidden text-sm font-semibold tracking-wide transition-all duration-300">Hubungi Kami</span>
+    </a>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md px-4 py-3 md:hidden border-t border-brand-gold/30 mobile-cta-shadow">
+        <div class="flex items-center gap-3">
+            <div class="leading-tight flex items-center gap-1.5 shrink-0">
+                <span class="text-lg">⏳</span>
+                <p class="text-[11px] font-semibold text-brand-primary leading-tight">Tawaran berakhir<br>tidak lama lagi</p>
+            </div>
+            <a href="#order" class="flex-1 bg-brand-primary text-white text-center py-3.5 rounded-full font-semibold text-sm tracking-wide shadow-lg active:scale-95 transition-transform">
+                Tempah Sekarang →
+            </a>
+        </div>
+    </div>
+
+    <!-- ANNOUNCEMENT BAR BERGERAK -->
+    <div class="bg-brand-primary text-white py-2.5 text-[10px] sm:text-xs font-semibold tracking-[0.15em] uppercase marquee-container relative z-20">
+        <div class="animate-marquee">
+            <span class="mx-4">Percuma Penghantaran Seluruh Malaysia</span> ✦
+            <span class="mx-4">Pembungkusan Privasi Dijamin</span> ✦
+            <span class="mx-4">Barang Sampai Baru Bayar (COD)</span> ✦
+            <span class="mx-4">Percuma Penghantaran Seluruh Malaysia</span> ✦
+            <span class="mx-4">Pembungkusan Privasi Dijamin</span> ✦
+            <span class="mx-4">Barang Sampai Baru Bayar (COD)</span> ✦
+        </div>
+    </div>
+
+    <!-- 01. HERO SECTION -->
+    <section class="relative overflow-hidden pt-10 pb-16 md:py-24 premium-bg border-b border-brand-gold/30">
+        <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <div class="space-y-6 text-center md:text-left order-2 md:order-1 relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-brand-gold/60 rounded-full shadow-sm">
+                    <span class="text-[10px] uppercase tracking-widest text-brand-primary font-bold">Wanita Sihat, Aura Terserlah</span>
+                </div>
+
+                <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark leading-[1.15]">
+                    Rahsia Penjagaan Dalaman Wanita Yang Lebih <span class="italic text-brand-primary font-medium">Segar & Yakin</span>
+                </h1>
+
+                <!-- Rating mini -->
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <span class="text-brand-gold text-sm tracking-widest">★★★★★</span>
+                    <span class="text-xs text-brand-dark/60 font-medium">Dipercayai 5,000+ wanita di Malaysia</span>
+                </div>
+
+                <p class="text-sm md:text-base text-brand-dark/70 leading-relaxed max-w-lg mx-auto md:mx-0 font-light">
+                    Auralisse membantu melengkapkan rutin penjagaan wanita moden untuk keselesaan berpanjangan—diinspirasikan daripada amalan tradisional turun-temurun secara eksklusif.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
+                    <a href="#pakej" class="w-full sm:w-auto bg-brand-primary text-white px-8 py-4 rounded-full font-semibold tracking-wide shadow-xl hover:shadow-2xl hover:bg-[#7a323d] transition-all text-sm uppercase text-center">
+                        Miliki Auralisse Hari Ini
+                    </a>
+                    <a href="#kelebihan" class="w-full sm:w-auto px-6 py-4 rounded-full font-semibold tracking-wide text-brand-primary text-sm uppercase text-center hover:bg-white/60 transition-colors">
+                        Kenapa Auralisse? ↓
+                    </a>
+                </div>
+
+                <!-- Trust micro badges -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-5 gap-y-2 pt-2 text-[11px] text-brand-dark/60 font-medium">
+                    <span class="flex items-center gap-1.5"><span class="text-brand-primary">✓</span> 100% Herba Terpilih</span>
+                    <span class="flex items-center gap-1.5"><span class="text-brand-primary">✓</span> Bayar Bila Sampai (COD)</span>
+                    <span class="flex items-center gap-1.5"><span class="text-brand-primary">✓</span> Bungkusan Privasi</span>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 flex justify-center relative">
+                <div class="absolute inset-0 bg-brand-gold/20 rounded-full filter blur-[80px] w-[300px] h-[300px] mx-auto my-auto z-0"></div>
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/dsdcd.png" alt="Auralisse Premium" class="w-[280px] md:w-[350px] lg:w-[400px] object-contain relative z-10 mx-auto drop-shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST / STATS BAR -->
+    <section class="bg-white border-b border-brand-gold/30">
+        <div class="max-w-5xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="font-serif text-2xl md:text-3xl text-brand-primary font-bold">5,000+</p>
+                <p class="text-[11px] text-brand-dark/60 uppercase tracking-wider mt-1">Wanita Terjaga</p>
+            </div>
+            <div>
+                <p class="font-serif text-2xl md:text-3xl text-brand-primary font-bold">4.9<span class="text-base align-top">★</span></p>
+                <p class="text-[11px] text-brand-dark/60 uppercase tracking-wider mt-1">Penilaian Pengguna</p>
+            </div>
+            <div>
+                <p class="font-serif text-2xl md:text-3xl text-brand-primary font-bold">100%</p>
+                <p class="text-[11px] text-brand-dark/60 uppercase tracking-wider mt-1">Herba & GMP</p>
+            </div>
+            <div>
+                <p class="font-serif text-2xl md:text-3xl text-brand-primary font-bold">COD</p>
+                <p class="text-[11px] text-brand-dark/60 uppercase tracking-wider mt-1">Sampai Baru Bayar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TAMBAHAN (DI BAWAH SECTION 1) - FULL WIDTH -->
+    <section class="w-full bg-white overflow-hidden">
+        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/d8e87d10-6e96-44be-8b4c-a18b2a2836dd.png" alt="Auralisse Feature Full Width" class="w-full h-auto block">
+    </section>
+
+    <!-- PROBLEM / EMPATHY SECTION -->
+    <section class="py-16 md:py-24 bg-brand-bg">
+        <div class="max-w-3xl mx-auto px-5 text-center reveal">
+            <span class="text-brand-primary text-xs uppercase tracking-widest font-semibold">Adakah Ini Anda?</span>
+            <h2 class="font-serif text-2xl md:text-4xl text-brand-dark mt-3 mb-8 leading-tight">Bila Dalaman Tak Terjaga, Keyakinan Pun Hilang</h2>
+        </div>
+        <div class="max-w-4xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div class="bg-white p-6 rounded-2xl border border-brand-gold/30 text-center card-shadow reveal">
+                <div class="text-3xl mb-3">😣</div>
+                <p class="text-sm text-brand-dark/70 leading-relaxed">Rasa kurang segar & kurang selesa, terutama selepas habis haid.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-brand-gold/30 text-center card-shadow reveal">
+                <div class="text-3xl mb-3">😴</div>
+                <p class="text-sm text-brand-dark/70 leading-relaxed">Badan terasa berat & lesu, mood naik-turun sepanjang hari.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-brand-gold/30 text-center card-shadow reveal">
+                <div class="text-3xl mb-3">🤫</div>
+                <p class="text-sm text-brand-dark/70 leading-relaxed">Susah nak jaga rutin dalaman tanpa persediaan yang rumit & menyusahkan.</p>
+            </div>
+        </div>
+        <p class="text-center text-sm text-brand-dark/60 mt-8 max-w-xl mx-auto px-5 reveal">
+            Auralisse hadir sebagai langkah mudah untuk kembalikan kesegaran & keyakinan anda — dari dalam.
+        </p>
+    </section>
+
+    <!-- INTRODUCE PRODUCT & FEATURES -->
+    <section id="kelebihan" class="py-16 md:py-24 bg-white relative scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-5 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mb-6 reveal">Memperkenalkan Auralisse</h2>
+            <p class="text-sm text-brand-dark/70 max-w-2xl mx-auto leading-relaxed mb-10 reveal">
+                Auralisse mengekalkan keaslian <strong>makjun tradisional</strong> yang diformulasikan semula melalui proses pembuatan moden yang bersih. Khas untuk wanita moden menjaga kesegaran diri dari dalam tanpa persediaan yang rumit.
+            </p>
+
+            <!-- BANNER BAHAN UTAMA (GANTI URL DI BAWAH DENGAN URL GAMBAR ANDA DARI WORDPRESS) -->
+            <div class="w-full rounded-2xl overflow-hidden shadow-md border border-brand-gold/30 mb-12 reveal">
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/ChatGPT-Image-Jun-24-2026-06_51_27-PM.png"
+                     alt="Auralisse - Bahan Utama Terpilih: Manjakani, Ubi Bit, Bunga Telang, Ekstrak Pueraria Mirifica"
+                     class="w-full h-auto block">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 100% Herba -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-gold/30 reveal">
+                    <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/ChatGPT-Image-Jun-24-2026-06_25_24-PM.png" alt="100% Herba Terpilih" class="w-full aspect-video object-cover rounded-lg mb-4 shadow-sm border border-brand-gold/20">
+                    <h4 class="font-semibold text-sm text-brand-dark">100% Herba Terpilih</h4>
+                    <p class="text-xs text-brand-dark/60 mt-2">Kombinasi herba warisan berkualiti tinggi tanpa campuran berbahaya.</p>
+                </div>
+                <!-- Kilang GMP -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-gold/30 reveal">
+                    <div class="w-full aspect-video bg-brand-bg border border-dashed border-brand-gold/50 rounded-lg flex flex-col items-center justify-center mx-auto mb-4 overflow-hidden relative">
+                         <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/ChatGPT-Image-Jun-24-2026-07_08_04-PM.png" alt="Kilang GMP" class="absolute inset-0 w-full h-full object-cover object-center">
+                    </div>
+                    <h4 class="font-semibold text-sm text-brand-dark">Pembuatan Bersih (GMP)</h4>
+                    <p class="text-xs text-brand-dark/60 mt-2">Diproses di kilang bertaraf moden untuk menjamin kebersihan.</p>
+                </div>
+                <!-- Mudah Ditelan -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-gold/30 reveal">
+                    <div class="w-full aspect-video bg-brand-bg rounded-lg overflow-hidden relative mx-auto mb-4 border border-brand-gold/20">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-7.09.12-PM.jpeg" alt="Tekstur Makjun Mudah Ditelan" class="absolute inset-0 w-full h-full object-cover object-center">
+                    </div>
+                    <h4 class="font-semibold text-sm text-brand-dark">Mudah Ditelan</h4>
+                    <p class="text-xs text-brand-dark/60 mt-2">Tekstur lembut dan kemas, tidak pahit atau tersangkut di tekak.</p>
+                </div>
+                <!-- Mesra Rutin -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-gold/30 reveal">
+                    <div class="w-full aspect-video bg-brand-bg rounded-lg overflow-hidden relative mx-auto mb-4 border border-brand-gold/20">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-7.09.52-PM.jpeg" alt="Packaging Mesra Rutin" class="absolute inset-0 w-full h-full object-cover object-center">
+                    </div>
+                    <h4 class="font-semibold text-sm text-brand-dark">Mesra Rutin</h4>
+                    <p class="text-xs text-brand-dark/60 mt-2">Packaging eksklusif, mudah dibawa ke pejabat atau sewaktu travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA PENGGUNAAN (GAMBAR) -->
+    <section class="py-16 md:py-24 premium-bg border-y border-brand-gold/30">
+        <div class="max-w-4xl mx-auto px-5 text-center">
+            <span class="text-brand-primary text-xs uppercase tracking-widest font-semibold reveal">Semudah 1-2-3</span>
+            <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mt-3 mb-12 reveal">Cara Penggunaan Auralisse</h2>
+            <div class="w-full rounded-2xl overflow-hidden shadow-md border border-brand-gold/30 reveal">
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-7.16.48-PM.jpeg" alt="Cara Penggunaan Auralisse" class="w-full h-auto block">
+            </div>
+        </div>
+    </section>
+
+    <!-- VISUAL EXTRA / LIFESTYLE IMAGE -->
+    <section class="py-8 md:py-12 bg-white relative border-b border-brand-gold/20">
+        <div class="max-w-5xl mx-auto px-5">
+            <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-brand-gold/30 group reveal">
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/ChatGPT-Image-Jun-24-2026-07_33_36-PM.png" alt="Auralisse Sesuai Untuk Siapa" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION BARU - GAMBAR LIFESTYLE -->
+    <section class="py-8 md:py-12 bg-white">
+        <div class="max-w-5xl mx-auto px-5">
+            <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-brand-gold/30 reveal">
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/01/ChatGPT-Image-Apr-17-2026-03_16_19-PM-1.png" alt="Auralisse Premium Visual" class="w-full h-auto block">
+            </div>
+        </div>
+    </section>
+
+    <!-- 08 & 09. IMPAK & TESTIMONI -->
+    <section class="py-16 md:py-24 bg-brand-primary text-white">
+        <div class="max-w-5xl mx-auto px-5">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand-gold text-xs uppercase tracking-widest font-semibold">Hasil Penggunaan (Impak)</span>
+                <h2 class="font-serif text-2xl md:text-3xl text-white mt-3">Kembalikan Aura & Kesegaran Sebenar Anda</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 relative reveal">
+                    <div class="w-full md:aspect-[3/4] rounded-xl mb-6 overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-7.28.23-PM.jpeg" alt="Testimoni WhatsApp Puan Hidayah" class="w-full h-auto md:h-full object-contain">
+                    </div>
+                    <div class="text-brand-gold mb-4 text-sm tracking-widest">★★★★★</div>
+                    <p class="text-sm text-white/80 leading-relaxed font-light italic">"Badan dah tak rasa berat melampau bila balik kerja. Paling suka bila ambil lepas habis period, rasa sangat bersih kat dalam. Memang saya repeat."</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <p class="text-xs font-semibold text-white">Puan Hidayah</p>
+                        <p class="text-[10px] text-white/40 mt-0.5">Pengguna Setia</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 relative reveal">
+                    <div class="w-full md:aspect-[3/4] rounded-xl mb-6 overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-7.41.08-PM.jpeg" alt="Testimoni WhatsApp Cik Nabila" class="w-full h-auto md:h-full object-contain">
+                    </div>
+                    <div class="text-brand-gold mb-4 text-sm tracking-widest">★★★★★</div>
+                    <p class="text-sm text-white/80 leading-relaxed font-light italic">"Saya jenis susah telan makjun sebab bau kuat, tapi Auralisse ni sedap dan lembut. Rutin pagi saya sekarang wajib ada Auralisse untuk mood positif."</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <p class="text-xs font-semibold text-white">Cik Nabila</p>
+                        <p class="text-[10px] text-white/40 mt-0.5">Eksekutif Kewangan</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 relative reveal">
+                    <div class="w-full md:aspect-[3/4] rounded-xl mb-6 overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-7.48.02-PM.jpeg" alt="Testimoni WhatsApp Datin Fazira" class="w-full h-auto md:h-full object-contain">
+                    </div>
+                    <div class="text-brand-gold mb-4 text-sm tracking-widest">★★★★★</div>
+                    <p class="text-sm text-white/80 leading-relaxed font-light italic">"Aura keyakinan tu datang balik bila kita tahu dalaman kita selesa dan terjaga. Sesuai sangat untuk ibu-ibu yang nak maintain bertenaga uruskan anak."</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <p class="text-xs font-semibold text-white">Datin Fazira</p>
+                        <p class="text-[10px] text-white/40 mt-0.5">Ibu Berkerjaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAROUSEL FEEDBACK PELANGGAN -->
+    <section class="py-16 md:py-20 bg-brand-bg overflow-hidden">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="text-center mb-10 reveal">
+                <span class="text-brand-primary text-xs uppercase tracking-widest font-semibold">Bukti Sebenar</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mt-3">Lebih Banyak Feedback Pelanggan</h2>
+            </div>
+
+            <div class="relative">
+                <!-- Butang Prev -->
+                <button id="fbPrev" aria-label="Sebelum" class="hidden md:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-brand-gold/50 shadow-lg items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current" stroke-width="2.2"><path d="M15 6l-6 6 6 6"/></svg>
+                </button>
+
+                <!-- Track -->
+                <div id="fbTrack" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 -mx-2 px-2" style="scrollbar-width:none;-ms-overflow-style:none;">
+                    <div class="snap-center shrink-0 w-[80%] sm:w-[46%] md:w-[31%]">
+                        <div class="rounded-2xl overflow-hidden border border-brand-gold/30 shadow-sm bg-white"><img src="https://auralissebeauty.store/wp-content/uploads/2026/01/ChatGPT-Image-Apr-17-2026-04_56_52-PM.png" alt="Feedback pelanggan Auralisse" class="w-full h-auto block" loading="lazy"></div>
+                    </div>
+                    <div class="snap-center shrink-0 w-[80%] sm:w-[46%] md:w-[31%]">
+                        <div class="rounded-2xl overflow-hidden border border-brand-gold/30 shadow-sm bg-white"><img src="https://auralissebeauty.store/wp-content/uploads/2026/01/ChatGPT-Image-Apr-17-2026-04_50_45-PM.png" alt="Feedback pelanggan Auralisse" class="w-full h-auto block" loading="lazy"></div>
+                    </div>
+                    <div class="snap-center shrink-0 w-[80%] sm:w-[46%] md:w-[31%]">
+                        <div class="rounded-2xl overflow-hidden border border-brand-gold/30 shadow-sm bg-white"><img src="https://auralissebeauty.store/wp-content/uploads/2026/01/photo_2026-04-17_16-42-01.jpg" alt="Feedback pelanggan Auralisse" class="w-full h-auto block" loading="lazy"></div>
+                    </div>
+                    <div class="snap-center shrink-0 w-[80%] sm:w-[46%] md:w-[31%]">
+                        <div class="rounded-2xl overflow-hidden border border-brand-gold/30 shadow-sm bg-white"><img src="https://auralissebeauty.store/wp-content/uploads/2026/01/photo_2026-04-17_16-42-02.jpg" alt="Feedback pelanggan Auralisse" class="w-full h-auto block" loading="lazy"></div>
+                    </div>
+                    <div class="snap-center shrink-0 w-[80%] sm:w-[46%] md:w-[31%]">
+                        <div class="rounded-2xl overflow-hidden border border-brand-gold/30 shadow-sm bg-white"><img src="https://auralissebeauty.store/wp-content/uploads/2026/01/ChatGPT-Image-Apr-17-2026-04_15_39-PM.png" alt="Feedback pelanggan Auralisse" class="w-full h-auto block" loading="lazy"></div>
+                    </div>
+                </div>
+
+                <!-- Butang Next -->
+                <button id="fbNext" aria-label="Seterusnya" class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-brand-gold/50 shadow-lg items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+                </button>
+            </div>
+            <p class="text-center text-[11px] text-brand-dark/40 mt-2 md:hidden">← Leret untuk lihat lagi →</p>
+        </div>
+    </section>
+
+    <!-- KENAPA PILIH AURALISSE (COMPARISON) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-5">
+            <div class="text-center mb-10 reveal">
+                <span class="text-brand-primary text-xs uppercase tracking-widest font-semibold">Bezakan Sendiri</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mt-3">Kenapa Pilih Auralisse?</h2>
+            </div>
+            <div class="w-full rounded-2xl overflow-hidden border border-brand-gold/40 card-shadow reveal">
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/ChatGPT-Image-Jun-24-2026-08_08_51-PM.png" alt="Kenapa Pilih Auralisse - Perbandingan" class="w-full h-auto block">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION BARU - GALERI GAMBAR -->
+    <section class="py-12 md:py-16 bg-brand-bg">
+        <div class="max-w-5xl mx-auto px-5">
+            <div class="text-center mb-8 reveal">
+                <div class="inline-flex items-center gap-2 px-5 py-2 bg-white border border-brand-gold/50 rounded-full shadow-sm">
+                    <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-brand-primary" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+                    <span class="text-sm font-semibold text-brand-primary tracking-wide">Produk Kelulusan KKM</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-brand-gold/30 reveal">
+                    <img src="https://auralissebeauty.store/wp-content/uploads/2026/01/photo_2026-01-06_16-18-53.jpg" alt="Auralisse" class="w-full h-auto block">
+                </div>
+                <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-brand-gold/30 reveal">
+                    <img src="https://auralissebeauty.store/wp-content/uploads/2026/01/photo_2026-01-06_16-18-49.jpg" alt="Auralisse" class="w-full h-auto block">
+                </div>
+            </div>
+
+            <!-- GAMBAR TAMBAHAN BAWAH KKM -->
+            <div class="mt-6 w-full rounded-2xl overflow-hidden shadow-sm border border-brand-gold/30 reveal">
+                <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-24-at-9.56.56-PM.jpeg" alt="Jaminan Wang Dikembalikan 100%" class="w-full h-auto block">
+            </div>
+        </div>
+    </section>
+
+    <!-- 10, 11, 12. PRICING, DELIVERY & URGENCY -->
+    <section id="pakej" class="py-16 md:py-24 bg-brand-bg scroll-mt-16">
+        <div class="max-w-5xl mx-auto px-5">
+            <div class="text-center mb-6 reveal">
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark">Pilih Pakej Penjagaan Anda</h2>
+                <p class="text-sm text-brand-dark/60 mt-2">Pelaburan untuk kekal cergas dan yakin setiap hari.</p>
+                <div class="mt-4 inline-block bg-red-50 border border-red-200 text-red-700 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest animate-pulse">
+                    🔥 Stok Batch Ini Sangat Terhad
+                </div>
+            </div>
+
+            <!-- COUNTDOWN TIMER -->
+            <div class="max-w-md mx-auto mb-10 reveal">
+                <p class="text-center text-[11px] uppercase tracking-widest text-brand-dark/50 mb-3">Tawaran tamat dalam</p>
+                <div id="countdown" class="flex justify-center gap-3">
+                    <div class="bg-white rounded-xl border border-brand-gold/40 px-4 py-2 text-center min-w-[64px] card-shadow">
+                        <span data-cd="h" class="font-serif text-2xl text-brand-primary font-bold">00</span>
+                        <span class="block text-[9px] uppercase tracking-wider text-brand-dark/50">Jam</span>
+                    </div>
+                    <div class="bg-white rounded-xl border border-brand-gold/40 px-4 py-2 text-center min-w-[64px] card-shadow">
+                        <span data-cd="m" class="font-serif text-2xl text-brand-primary font-bold">00</span>
+                        <span class="block text-[9px] uppercase tracking-wider text-brand-dark/50">Minit</span>
+                    </div>
+                    <div class="bg-white rounded-xl border border-brand-gold/40 px-4 py-2 text-center min-w-[64px] card-shadow">
+                        <span data-cd="s" class="font-serif text-2xl text-brand-primary font-bold">00</span>
+                        <span class="block text-[9px] uppercase tracking-wider text-brand-dark/50">Saat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 max-w-4xl mx-auto items-center">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-brand-gold/40 text-center card-shadow flex flex-col md:h-[90%] reveal">
+                    <h3 class="font-serif text-lg text-brand-dark font-medium">Set Percubaan</h3>
+                    <p class="text-xs text-brand-dark/50 mt-1 uppercase tracking-wider">1 Kotak</p>
+                    <div class="w-full aspect-square my-5 rounded-2xl overflow-hidden flex items-center justify-center bg-brand-bg border border-brand-gold/30 p-3">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/baru-1.jpeg" alt="Set Percubaan 1 Kotak" class="w-full h-full object-contain">
+                    </div>
+                    <div class="py-2 mb-auto">
+                        <span class="text-3xl font-serif text-brand-dark">RM49</span>
+                        <ul class="text-left text-[11px] text-brand-dark/70 space-y-1.5 mt-4 mb-2 mx-auto max-w-[180px]">
+                            <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> 1 Kotak (7 Sachet)</li>
+                            <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> Penghantaran Percuma Semenanjung</li>
+                            <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> Tiada Cabutan Bertuah</li>
+                        </ul>
+                    </div>
+                    <a href="#order" class="block w-full border border-brand-primary text-brand-primary py-3 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-brand-primary hover:text-white transition-colors mt-4">
+                        Pilih Pakej
+                    </a>
+                </div>
+
+                <!-- Package 2 (Best Seller) -->
+                <div class="bg-brand-primary rounded-2xl p-1 shadow-2xl relative z-10 reveal">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-gold text-brand-dark text-[10px] font-bold tracking-widest px-4 py-1.5 rounded-full uppercase whitespace-nowrap">
+                        Paling Berbaloi
+                    </div>
+                    <div class="bg-white rounded-xl p-8 text-center h-full flex flex-col">
+                        <h3 class="font-serif text-xl text-brand-dark font-bold">Set Konsisten</h3>
+                        <p class="text-[11px] text-brand-primary mt-1 uppercase tracking-wider font-semibold">2 Kotak (Paling Popular)</p>
+                        <div class="w-full aspect-square my-5 rounded-2xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-brand-gold/60 to-brand-primary/15 ring-2 ring-brand-gold shadow-lg p-3">
+                            <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/baru-3.jpeg" alt="Set Konsisten 2 Kotak" class="w-full h-full object-contain">
+                        </div>
+                        <div class="py-2 mb-auto border-t border-brand-gold/20 pt-4 mt-2">
+                            <span class="text-sm text-brand-dark/40 line-through">RM98</span>
+                            <span class="text-4xl font-serif text-brand-dark font-bold block">RM89</span>
+                            <ul class="text-left text-[11px] text-brand-dark/70 space-y-1.5 mt-4 mb-2 mx-auto max-w-[190px]">
+                                <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> 2 Kotak (14 Sachet)</li>
+                                <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> Penghantaran Percuma Semenanjung</li>
+                                <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> Tiada Cabutan Bertuah</li>
+                            </ul>
+                        </div>
+                        <a href="#order" class="block w-full bg-brand-primary text-white py-3.5 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-[#7a323d] transition-colors shadow-md mt-4">
+                            Ambil Pakej Jimat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-brand-gold/40 text-center card-shadow flex flex-col md:h-[90%] reveal">
+                    <h3 class="font-serif text-lg text-brand-dark font-medium">Set Jimat</h3>
+                    <p class="text-xs text-brand-dark/50 mt-1 uppercase tracking-wider">3 Kotak</p>
+                    <div class="w-full aspect-square my-5 rounded-2xl overflow-hidden flex items-center justify-center bg-brand-bg border border-brand-gold/30 p-3">
+                        <img src="https://auralissebeauty.store/wp-content/uploads/2026/06/baru-2.jpeg" alt="Set Jimat 3 Kotak" class="w-full h-full object-contain">
+                    </div>
+                    <div class="py-2 mb-auto">
+                        <span class="text-sm text-brand-dark/40 line-through">RM147</span>
+                        <span class="text-3xl font-serif text-brand-dark block">RM99</span>
+                        <ul class="text-left text-[11px] text-brand-dark/70 space-y-1.5 mt-4 mb-2 mx-auto max-w-[180px]">
+                            <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> 3 Kotak (21 Sachet)</li>
+                            <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">✓</span> Penghantaran Percuma Semenanjung</li>
+                            <li class="flex items-start gap-1.5"><span class="text-brand-primary font-bold">🎁</span> <strong class="text-brand-primary">Layak Cabutan Bertuah</strong></li>
+                        </ul>
+                    </div>
+                    <a href="#order" class="block w-full border border-brand-primary text-brand-primary py-3 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-brand-primary hover:text-white transition-colors mt-4">
+                        Pilih Pakej
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-6 text-xs text-brand-dark/70 font-medium">
+                <div class="flex items-center gap-2"><span class="text-brand-primary">✓</span> Jaminan Privasi Bungkusan</div>
+                <div class="flex items-center gap-2"><span class="text-brand-primary">✓</span> Barang Sampai Baru Bayar (COD)</div>
+                <div class="flex items-center gap-2"><span class="text-brand-primary">✓</span> Kurier Seluruh Malaysia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LETAK FORM CHECKOUT CARTFLOWS DI SINI (dalam WordPress) -->
+    <!-- (FAQ, CTA & footer diletak sebagai widget berasingan di BAWAH form) -->
+
+    <script>
+        // Reveal-on-scroll
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+        // Countdown timer (6 jam, disimpan dalam sesi pelawat)
+        (function () {
+            const DURATION = 6 * 60 * 60 * 1000; // 6 jam
+            let end = sessionStorage.getItem('auralisse_cd_end');
+            if (!end) { end = Date.now() + DURATION; sessionStorage.setItem('auralisse_cd_end', end); }
+            end = parseInt(end, 10);
+            const h = document.querySelector('[data-cd="h"]');
+            const m = document.querySelector('[data-cd="m"]');
+            const s = document.querySelector('[data-cd="s"]');
+            function tick() {
+                let diff = end - Date.now();
+                if (diff < 0) { end = Date.now() + DURATION; sessionStorage.setItem('auralisse_cd_end', end); diff = DURATION; }
+                const hrs = Math.floor(diff / 3600000);
+                const mins = Math.floor((diff % 3600000) / 60000);
+                const secs = Math.floor((diff % 60000) / 1000);
+                if (h) h.textContent = String(hrs).padStart(2, '0');
+                if (m) m.textContent = String(mins).padStart(2, '0');
+                if (s) s.textContent = String(secs).padStart(2, '0');
+            }
+            tick();
+            setInterval(tick, 1000);
+        })();
+
+        // Carousel feedback
+        (function () {
+            const track = document.getElementById('fbTrack');
+            if (!track) return;
+            const step = () => {
+                const card = track.querySelector('div');
+                return card ? card.getBoundingClientRect().width + 20 : track.clientWidth * 0.8;
+            };
+            const prev = document.getElementById('fbPrev');
+            const next = document.getElementById('fbNext');
+            if (prev) prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+            if (next) next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+        })();
+    </script>
+
+</body>
+</html>
